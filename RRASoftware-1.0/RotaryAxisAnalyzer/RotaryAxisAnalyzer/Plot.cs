@@ -256,5 +256,15 @@ namespace RotaryAxisAnalyzer
         {
 
         }
+
+        private void tableLayoutPanel12_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

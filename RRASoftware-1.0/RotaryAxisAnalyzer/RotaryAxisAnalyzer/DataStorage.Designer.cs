@@ -131,11 +131,12 @@
             // input_testTitle
             // 
             this.input_testTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
+            this.input_testTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.input_testTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.input_testTitle.Location = new System.Drawing.Point(3, 25);
             this.input_testTitle.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.input_testTitle.Name = "input_testTitle";
-            this.input_testTitle.Size = new System.Drawing.Size(149, 20);
+            this.input_testTitle.Size = new System.Drawing.Size(149, 13);
             this.input_testTitle.TabIndex = 0;
             // 
             // label1
@@ -186,41 +187,45 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Location = new System.Drawing.Point(165, 25);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(149, 20);
+            this.textBox1.Size = new System.Drawing.Size(149, 13);
             this.textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox2.Location = new System.Drawing.Point(327, 25);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(149, 20);
+            this.textBox2.Size = new System.Drawing.Size(149, 13);
             this.textBox2.TabIndex = 6;
             // 
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox3.Location = new System.Drawing.Point(489, 25);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(149, 20);
+            this.textBox3.Size = new System.Drawing.Size(149, 13);
             this.textBox3.TabIndex = 7;
             // 
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox4.Location = new System.Drawing.Point(651, 25);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(149, 20);
+            this.textBox4.Size = new System.Drawing.Size(149, 13);
             this.textBox4.TabIndex = 8;
             // 
             // dateTimePicker1
