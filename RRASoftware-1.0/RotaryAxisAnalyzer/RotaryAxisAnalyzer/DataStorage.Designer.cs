@@ -53,8 +53,8 @@
             this.operatorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.exportBtn = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.importDBbtn = new System.Windows.Forms.Button();
             this.deleteBtn = new System.Windows.Forms.Button();
             this.refreshBtn = new System.Windows.Forms.Button();
@@ -334,15 +334,6 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(984, 36);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "file-export.png");
-            this.imageList1.Images.SetKeyName(1, "import (1).png");
-            this.imageList1.Images.SetKeyName(2, "trash.png");
-            this.imageList1.Images.SetKeyName(3, "circular-arrow (1).png");
-            // 
             // exportBtn
             // 
             this.exportBtn.BackColor = System.Drawing.SystemColors.AppWorkspace;
@@ -357,6 +348,15 @@
             this.exportBtn.Size = new System.Drawing.Size(54, 36);
             this.exportBtn.TabIndex = 4;
             this.exportBtn.UseVisualStyleBackColor = false;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "file-export.png");
+            this.imageList1.Images.SetKeyName(1, "import (1).png");
+            this.imageList1.Images.SetKeyName(2, "trash.png");
+            this.imageList1.Images.SetKeyName(3, "circular-arrow (1).png");
             // 
             // importDBbtn
             // 
