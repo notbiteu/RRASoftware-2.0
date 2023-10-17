@@ -263,6 +263,8 @@
             // 
             // dataStorageTable
             // 
+            this.dataStorageTable.AllowUserToAddRows = false;
+            this.dataStorageTable.AllowUserToDeleteRows = false;
             this.dataStorageTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataStorageTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.testTitle,
@@ -275,6 +277,7 @@
             this.dataStorageTable.Location = new System.Drawing.Point(8, 58);
             this.dataStorageTable.Margin = new System.Windows.Forms.Padding(8);
             this.dataStorageTable.Name = "dataStorageTable";
+            this.dataStorageTable.ReadOnly = true;
             this.dataStorageTable.Size = new System.Drawing.Size(968, 373);
             this.dataStorageTable.TabIndex = 1;
             // 
