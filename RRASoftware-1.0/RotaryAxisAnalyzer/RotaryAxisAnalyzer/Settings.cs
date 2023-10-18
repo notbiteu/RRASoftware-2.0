@@ -15,15 +15,13 @@ namespace RotaryAxisAnalyzer
         public Settings()
         {
             InitializeComponent();
+            this.TopMost = true;
 
-            //Panel Design
-
-
+            GeneralSetting generalST = new GeneralSetting();
+            settingPanel.Controls.Clear();
+            generalST.Dock = DockStyle.Fill;
+            settingPanel.Controls.Add(generalST);
             //Btn Design
-            gsBtn.Paint += (sender, e) => BtnDecoration.ButtonDecoration(gsBtn, e);
-            asBtn.Paint += (sender, e) => BtnDecoration.ButtonDecoration(asBtn, e);
-            applyBtn.Paint += (sender, e) => BtnDecoration.ButtonDecoration(applyBtn, e);
-            cancelBtn.Paint += (sender, e) => BtnDecoration.ButtonDecoration(cancelBtn, e);
 
             asBtn.FlatStyle = FlatStyle.Flat;
             asBtn.FlatAppearance.BorderSize = 0;
@@ -38,41 +36,39 @@ namespace RotaryAxisAnalyzer
             cancelBtn.FlatAppearance.BorderSize = 0;
 
         }
-        public void loadform(Form formToLoad)
+
+        private void settingPanel_Paint(object sender, PaintEventArgs e)
         {
-            settingPanel.Controls.Clear();
 
-            formToLoad.TopLevel = false;
-            formToLoad.Dock = DockStyle.Fill;
-
-            settingPanel.Controls.Add(formToLoad);
-        }
-
-        private void gsBtn_Click(object sender, EventArgs e)
-        {
-            gsBtn.BackColor = Color.FromArgb(49, 49, 49);
-            gsBtn.ForeColor = Color.Snow;
-            asBtn.BackColor = Color.Snow;
-            asBtn.ForeColor = Color.FromArgb(49, 49, 49);
-
-            GeneralST generalForm = new GeneralST();
-            loadform(generalForm);
         }
 
         private void asBtn_Click(object sender, EventArgs e)
         {
             asBtn.BackColor = Color.FromArgb(49, 49, 49);
-            asBtn.ForeColor = Color.Snow;
-            gsBtn.BackColor = Color.Snow;
+            asBtn.ForeColor = Color.FromArgb(217, 217, 217);
+            gsBtn.BackColor = Color.FromArgb(217, 217, 217);
             gsBtn.ForeColor = Color.FromArgb(49, 49, 49);
 
-            AutoSetST AutoSet = new AutoSetST();
-            loadform(AutoSet);
+            AutosetSetting autoST = new AutosetSetting();
+            settingPanel.Controls.Clear();
+            autoST.Dock = DockStyle.Fill;
+            settingPanel.Controls.Add(autoST);
         }
 
+        private void gsBtn_Click_1(object sender, EventArgs e)
+        {
+            gsBtn.BackColor = Color.FromArgb(49, 49, 49);
+            gsBtn.ForeColor = Color.FromArgb(217, 217, 217);
+            asBtn.BackColor = Color.FromArgb(217, 217, 217);
+            asBtn.ForeColor = Color.FromArgb(49, 49, 49);
 
+            GeneralSetting generalST = new GeneralSetting();
+            settingPanel.Controls.Clear();
+            generalST.Dock = DockStyle.Fill;
+            settingPanel.Controls.Add(generalST);
+        }
 
-        private void settingPanel_Paint(object sender, PaintEventArgs e)
+        private void settingPanel_Paint_1(object sender, PaintEventArgs e)
         {
 
         }

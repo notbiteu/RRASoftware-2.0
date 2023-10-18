@@ -171,6 +171,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutosetSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AutosetSetting.Designer.cs">
+      <DependentUpon>AutosetSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="AutoSetST.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,12 @@
     </Compile>
     <Compile Include="DataStorage.Designer.cs">
       <DependentUpon>DataStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeneralSetting.Designer.cs">
+      <DependentUpon>GeneralSetting.cs</DependentUpon>
     </Compile>
     <Compile Include="GeneralST.cs">
       <SubType>Form</SubType>
@@ -234,11 +246,17 @@
     <Compile Include="testInfoPage.Designer.cs">
       <DependentUpon>testInfoPage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AutosetSetting.resx">
+      <DependentUpon>AutosetSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AutoSetST.resx">
       <DependentUpon>AutoSetST.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataStorage.resx">
       <DependentUpon>DataStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralSetting.resx">
+      <DependentUpon>GeneralSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GeneralST.resx">
       <DependentUpon>GeneralST.cs</DependentUpon>

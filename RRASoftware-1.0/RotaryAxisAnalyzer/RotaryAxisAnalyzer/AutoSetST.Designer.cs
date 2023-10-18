@@ -136,30 +136,34 @@
             // 
             // DPRstepper
             // 
+            this.DPRstepper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DPRstepper.Location = new System.Drawing.Point(362, 3);
             this.DPRstepper.Name = "DPRstepper";
-            this.DPRstepper.Size = new System.Drawing.Size(349, 20);
+            this.DPRstepper.Size = new System.Drawing.Size(390, 20);
             this.DPRstepper.TabIndex = 4;
             // 
             // MaxRPMstepper
             // 
+            this.MaxRPMstepper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MaxRPMstepper.Location = new System.Drawing.Point(362, 53);
             this.MaxRPMstepper.Name = "MaxRPMstepper";
-            this.MaxRPMstepper.Size = new System.Drawing.Size(349, 20);
+            this.MaxRPMstepper.Size = new System.Drawing.Size(390, 20);
             this.MaxRPMstepper.TabIndex = 5;
             // 
             // APRstepper
             // 
+            this.APRstepper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.APRstepper.Location = new System.Drawing.Point(362, 103);
             this.APRstepper.Name = "APRstepper";
-            this.APRstepper.Size = new System.Drawing.Size(349, 20);
+            this.APRstepper.Size = new System.Drawing.Size(390, 20);
             this.APRstepper.TabIndex = 6;
             // 
             // mRPMstepper
             // 
+            this.mRPMstepper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mRPMstepper.Location = new System.Drawing.Point(362, 153);
             this.mRPMstepper.Name = "mRPMstepper";
-            this.mRPMstepper.Size = new System.Drawing.Size(349, 20);
+            this.mRPMstepper.Size = new System.Drawing.Size(390, 20);
             this.mRPMstepper.TabIndex = 7;
             // 
             // AutoSetST

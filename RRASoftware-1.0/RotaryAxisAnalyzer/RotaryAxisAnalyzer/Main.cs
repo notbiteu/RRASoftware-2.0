@@ -27,8 +27,6 @@ namespace RotaryAxisAnalyzer
 
             this.FormBorderStyle = FormBorderStyle.None;
 
-            timer1.Start();
-
             //button image insert
             plotBtn.ImageIndex = 1;
             importDataBtn.ImageIndex = 2;
@@ -41,11 +39,6 @@ namespace RotaryAxisAnalyzer
             dataStorageBtn.Paint += (sender, e) => BtnDecoration.ButtonDecoration(dataStorageBtn, e);
             settingsBtn.Paint += (sender, e) => BtnDecoration.ButtonDecoration(settingsBtn, e);
 
-            //delay for Setting Screen appear when program start, I will make it begin only first use later
-            delayTimer = new Timer();
-            delayTimer.Interval = 1000;
-            delayTimer.Tick += (sender, e) => ShowSettingsForm();
-            delayTimer.Start();
 
         }
 
@@ -65,7 +58,6 @@ namespace RotaryAxisAnalyzer
 
         private void ShowSettingsForm()
         {
-            delayTimer.Stop();
             Settings ST = new Settings();
             ST.StartPosition = FormStartPosition.CenterScreen;
             ST.Show();
@@ -73,6 +65,7 @@ namespace RotaryAxisAnalyzer
 
         private void Main_Form_Load(object sender, EventArgs e)
         {
+            ShowSettingsForm();
             createSaveDataFolder();
 
         }

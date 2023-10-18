@@ -31,14 +31,15 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.gsBtn = new FontAwesome.Sharp.IconButton();
-            this.asBtn = new FontAwesome.Sharp.IconButton();
+            this.gsBtn = new System.Windows.Forms.Button();
+            this.asBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.settingPanel = new RotaryAxisAnalyzer.PanelDecoration();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.applyBtn = new FontAwesome.Sharp.IconButton();
-            this.cancelBtn = new FontAwesome.Sharp.IconButton();
+            this.applyBtn = new System.Windows.Forms.Button();
+            this.cancelBtn = new System.Windows.Forms.Button();
+            this.settingPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -60,7 +61,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(901, 559);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(930, 539);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -72,7 +73,7 @@
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(10);
-            this.panel1.Size = new System.Drawing.Size(170, 559);
+            this.panel1.Size = new System.Drawing.Size(170, 539);
             this.panel1.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -89,38 +90,28 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(150, 539);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(150, 519);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // gsBtn
             // 
             this.gsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.gsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gsBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gsBtn.ForeColor = System.Drawing.Color.Snow;
-            this.gsBtn.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.gsBtn.IconColor = System.Drawing.Color.Black;
-            this.gsBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.gsBtn.Location = new System.Drawing.Point(3, 3);
             this.gsBtn.Name = "gsBtn";
             this.gsBtn.Size = new System.Drawing.Size(144, 44);
             this.gsBtn.TabIndex = 0;
             this.gsBtn.Text = "General Setting";
             this.gsBtn.UseVisualStyleBackColor = false;
-            this.gsBtn.Click += new System.EventHandler(this.gsBtn_Click);
+            this.gsBtn.Click += new System.EventHandler(this.gsBtn_Click_1);
             // 
             // asBtn
             // 
             this.asBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.asBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.asBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.asBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.asBtn.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.asBtn.IconColor = System.Drawing.Color.Black;
-            this.asBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.asBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asBtn.Location = new System.Drawing.Point(3, 53);
             this.asBtn.Name = "asBtn";
             this.asBtn.Size = new System.Drawing.Size(144, 44);
@@ -139,15 +130,15 @@
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(10);
-            this.panel2.Size = new System.Drawing.Size(731, 559);
+            this.panel2.Size = new System.Drawing.Size(760, 539);
             this.panel2.TabIndex = 2;
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.settingPanel, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.settingPanel, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(10, 10);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
@@ -155,47 +146,36 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 450F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(711, 539);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(740, 519);
             this.tableLayoutPanel3.TabIndex = 0;
-            // 
-            // settingPanel
-            // 
-            this.settingPanel.BackColor = System.Drawing.Color.Snow;
-            this.settingPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.settingPanel.Location = new System.Drawing.Point(3, 3);
-            this.settingPanel.Name = "settingPanel";
-            this.settingPanel.Size = new System.Drawing.Size(705, 444);
-            this.settingPanel.TabIndex = 0;
-            this.settingPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.settingPanel_Paint);
             // 
             // tableLayoutPanel4
             // 
-            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnCount = 4;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel4.Controls.Add(this.cancelBtn, 3, 0);
             this.tableLayoutPanel4.Controls.Add(this.applyBtn, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.cancelBtn, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.button1, 2, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(10, 460);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(10);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(691, 45);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(720, 45);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // applyBtn
             // 
             this.applyBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.applyBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.applyBtn.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.applyBtn.IconColor = System.Drawing.Color.Black;
-            this.applyBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.applyBtn.Location = new System.Drawing.Point(391, 0);
-            this.applyBtn.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.applyBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.applyBtn.Location = new System.Drawing.Point(273, 3);
             this.applyBtn.Name = "applyBtn";
-            this.applyBtn.Size = new System.Drawing.Size(140, 45);
+            this.applyBtn.Size = new System.Drawing.Size(144, 39);
             this.applyBtn.TabIndex = 0;
             this.applyBtn.Text = "Apply";
             this.applyBtn.UseVisualStyleBackColor = false;
@@ -204,22 +184,41 @@
             // 
             this.cancelBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.cancelBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cancelBtn.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.cancelBtn.IconColor = System.Drawing.Color.Black;
-            this.cancelBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.cancelBtn.Location = new System.Drawing.Point(551, 0);
-            this.cancelBtn.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.cancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelBtn.Location = new System.Drawing.Point(573, 3);
             this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(130, 45);
+            this.cancelBtn.Size = new System.Drawing.Size(144, 39);
             this.cancelBtn.TabIndex = 1;
             this.cancelBtn.Text = "Cancel";
             this.cancelBtn.UseVisualStyleBackColor = false;
+            // 
+            // settingPanel
+            // 
+            this.settingPanel.BackColor = System.Drawing.Color.Snow;
+            this.settingPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.settingPanel.Location = new System.Drawing.Point(3, 3);
+            this.settingPanel.Name = "settingPanel";
+            this.settingPanel.Size = new System.Drawing.Size(734, 444);
+            this.settingPanel.TabIndex = 2;
+            this.settingPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.settingPanel_Paint_1);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(423, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(144, 39);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(901, 559);
+            this.ClientSize = new System.Drawing.Size(930, 539);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Settings";
             this.ShowIcon = false;
@@ -240,12 +239,13 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        public FontAwesome.Sharp.IconButton asBtn;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        public FontAwesome.Sharp.IconButton gsBtn;
-        public FontAwesome.Sharp.IconButton applyBtn;
-        public FontAwesome.Sharp.IconButton cancelBtn;
-        private PanelDecoration settingPanel;
+        private System.Windows.Forms.Button applyBtn;
+        private System.Windows.Forms.Button cancelBtn;
+        private System.Windows.Forms.Button gsBtn;
+        private System.Windows.Forms.Button asBtn;
+        private System.Windows.Forms.Panel settingPanel;
+        private System.Windows.Forms.Button button1;
     }
 }
