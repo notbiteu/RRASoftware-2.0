@@ -34,6 +34,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.DPRstepper = new System.Windows.Forms.TextBox();
+            this.MaxRPMstepper = new System.Windows.Forms.TextBox();
+            this.APRstepper = new System.Windows.Forms.TextBox();
+            this.mRPMstepper = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
@@ -64,6 +68,10 @@
             this.tableLayoutPanel6.Controls.Add(this.label2, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.label3, 1, 2);
             this.tableLayoutPanel6.Controls.Add(this.label4, 1, 3);
+            this.tableLayoutPanel6.Controls.Add(this.DPRstepper, 2, 0);
+            this.tableLayoutPanel6.Controls.Add(this.MaxRPMstepper, 2, 1);
+            this.tableLayoutPanel6.Controls.Add(this.APRstepper, 2, 2);
+            this.tableLayoutPanel6.Controls.Add(this.mRPMstepper, 2, 3);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 53);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -126,13 +134,41 @@
             this.label4.Text = "Measured  RPM";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // AutoSet
+            // DPRstepper
+            // 
+            this.DPRstepper.Location = new System.Drawing.Point(362, 3);
+            this.DPRstepper.Name = "DPRstepper";
+            this.DPRstepper.Size = new System.Drawing.Size(349, 20);
+            this.DPRstepper.TabIndex = 4;
+            // 
+            // MaxRPMstepper
+            // 
+            this.MaxRPMstepper.Location = new System.Drawing.Point(362, 53);
+            this.MaxRPMstepper.Name = "MaxRPMstepper";
+            this.MaxRPMstepper.Size = new System.Drawing.Size(349, 20);
+            this.MaxRPMstepper.TabIndex = 5;
+            // 
+            // APRstepper
+            // 
+            this.APRstepper.Location = new System.Drawing.Point(362, 103);
+            this.APRstepper.Name = "APRstepper";
+            this.APRstepper.Size = new System.Drawing.Size(349, 20);
+            this.APRstepper.TabIndex = 6;
+            // 
+            // mRPMstepper
+            // 
+            this.mRPMstepper.Location = new System.Drawing.Point(362, 153);
+            this.mRPMstepper.Name = "mRPMstepper";
+            this.mRPMstepper.Size = new System.Drawing.Size(349, 20);
+            this.mRPMstepper.TabIndex = 7;
+            // 
+            // AutoSetST
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel5);
-            this.Name = "AutoSet";
+            this.Name = "AutoSetST";
             this.Text = "AutoSet";
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
@@ -149,5 +185,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox DPRstepper;
+        private System.Windows.Forms.TextBox MaxRPMstepper;
+        private System.Windows.Forms.TextBox APRstepper;
+        private System.Windows.Forms.TextBox mRPMstepper;
     }
 }

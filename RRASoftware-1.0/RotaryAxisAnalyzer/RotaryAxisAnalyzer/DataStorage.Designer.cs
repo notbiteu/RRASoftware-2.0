@@ -286,6 +286,7 @@
             this.testTitle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.testTitle.HeaderText = "Test Title";
             this.testTitle.Name = "testTitle";
+            this.testTitle.ReadOnly = true;
             this.testTitle.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.testTitle.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
@@ -294,6 +295,7 @@
             this.machineName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.machineName.HeaderText = "MachineName";
             this.machineName.Name = "machineName";
+            this.machineName.ReadOnly = true;
             this.machineName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.machineName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
@@ -302,24 +304,28 @@
             this.serialNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.serialNumber.HeaderText = "Machine Serial Number";
             this.serialNumber.Name = "serialNumber";
+            this.serialNumber.ReadOnly = true;
             // 
             // axis
             // 
             this.axis.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.axis.HeaderText = "Axis";
             this.axis.Name = "axis";
+            this.axis.ReadOnly = true;
             // 
             // operatorName
             // 
             this.operatorName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.operatorName.HeaderText = "Operator";
             this.operatorName.Name = "operatorName";
+            this.operatorName.ReadOnly = true;
             // 
             // date
             // 
             this.date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.date.HeaderText = "Date";
             this.date.Name = "date";
+            this.date.ReadOnly = true;
             // 
             // tableLayoutPanel4
             // 
