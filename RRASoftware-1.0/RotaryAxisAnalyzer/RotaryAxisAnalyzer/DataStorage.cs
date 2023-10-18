@@ -28,5 +28,10 @@ namespace RotaryAxisAnalyzer
         {
 
         }
+
+        private void DataStorage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

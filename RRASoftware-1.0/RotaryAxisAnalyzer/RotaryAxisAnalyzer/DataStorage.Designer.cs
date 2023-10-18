@@ -426,6 +426,7 @@
             this.ClientSize = new System.Drawing.Size(1024, 515);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Name = "DataStorage";
+            this.Load += new System.EventHandler(this.DataStorage_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
