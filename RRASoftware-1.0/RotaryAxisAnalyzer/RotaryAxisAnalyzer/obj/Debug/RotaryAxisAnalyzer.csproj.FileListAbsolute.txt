@@ -160,9 +160,7 @@ O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\bin
 O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\bin\Debug\System.Text.Encoding.CodePages.xml
 O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\bin\Debug\System.Threading.Tasks.Extensions.xml
 O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj\Debug\RotaryAxisAnalyzer.csproj.AssemblyReference.cache
-O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj\Debug\RotaryAxisAnalyzer.AutoSetST.resources
 O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj\Debug\RotaryAxisAnalyzer.DataStorage.resources
-O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj\Debug\RotaryAxisAnalyzer.GeneralST.resources
 O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj\Debug\RotaryAxisAnalyzer.machineInfo.resources
 O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj\Debug\RotaryAxisAnalyzer.Main_Form.resources
 O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj\Debug\RotaryAxisAnalyzer.Plot.resources
@@ -176,3 +174,7 @@ O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj
 O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj\Debug\RotaryAxisAnalyzer.pdb
 O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj\Debug\RotaryAxisAnalyzer.AutosetSetting.resources
 O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj\Debug\RotaryAxisAnalyzer.GeneralSetting.resources
+O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\bin\Debug\CsvHelper.dll
+O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\bin\Debug\Microsoft.Bcl.HashCode.dll
+O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\bin\Debug\CsvHelper.xml
+O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\bin\Debug\Microsoft.Bcl.HashCode.xml

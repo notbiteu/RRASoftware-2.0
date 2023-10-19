@@ -11,6 +11,7 @@ using System.IO;
 
 using OxyPlot.WindowsForms;
 using OxyPlot.Axes;
+using System.Security.Cryptography.X509Certificates;
 
 namespace RotaryAxisAnalyzer
 {
@@ -66,22 +67,42 @@ namespace RotaryAxisAnalyzer
         private void Main_Form_Load(object sender, EventArgs e)
         {
             ShowSettingsForm();
-            createSaveDataFolder();
+            createSaveFolder();
 
         }
 
-        private void createSaveDataFolder()
+        //Create Folder
+        private void createSaveFolder()
         {
             string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            string folderName = "SaveDataRRA";
+            string configFolderName = "RRAConfig";
+            string saveDataFolderName = "SaveDataRRA";
+            string saveSettingFolderName = "SaveSettingRRA";
 
-            string folderPath = Path.Combine(documentsPath, folderName);
+            string configFolderPath = Path.Combine(documentsPath, configFolderName);
+            string saveDataFolderPath = Path.Combine(configFolderPath, saveDataFolderName);
+            string saveSettingFolderPath = Path.Combine(configFolderPath, saveSettingFolderName);
 
-            if (!Directory.Exists(folderPath))
+            if (!Directory.Exists(configFolderPath))
             {
-                Directory.CreateDirectory(folderPath);
+                Directory.CreateDirectory(configFolderPath);
             }
+
+            if (!Directory.Exists(saveDataFolderPath))
+            {
+                Directory.CreateDirectory(saveDataFolderPath);
+            }
+
+            if (!Directory.Exists(saveSettingFolderPath))
+            {
+                Directory.CreateDirectory(saveSettingFolderPath);
+            }
+
         }
+
+        //Create CSV Files
+
+
 
         //Date Time
         private void timer1_Tick(object sender, EventArgs e)
@@ -96,7 +117,6 @@ namespace RotaryAxisAnalyzer
             Settings STS = new Settings();
             STS.Show();
             this.Hide();
-
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -108,7 +128,10 @@ namespace RotaryAxisAnalyzer
         private void plotBtn_Click_1(object sender, EventArgs e)
         {
             Plot plotForm = new Plot();
-            loadform(plotForm);
+            Plot plotControl = new Plot();
+            mainPanel.Controls.Clear();
+            plotControl.Dock = DockStyle.Fill;
+            mainPanel.Controls.Add(plotControl);
 
         }
 
@@ -183,9 +206,17 @@ namespace RotaryAxisAnalyzer
 
         private void importDataBtn_Click(object sender, EventArgs e)
         {
+            //define path to open as default
+            string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string configFolderName = "RRAConfig";
+            string saveDataFolderName = "SaveDataRRA";
+
+            string configFolderPath = Path.Combine(documentsPath, configFolderName);
+            string saveDataFolderPath = Path.Combine(configFolderPath, saveDataFolderName);
+
             importDataDialog.FileName = "";
             importDataDialog.Filter = "CSV Files|*.csv";
-            importDataDialog.InitialDirectory = @"C:\Users\Simon\Documents\SaveDataRRA";
+            importDataDialog.InitialDirectory = saveDataFolderPath;
             importDataDialog.ShowDialog();
 
             if (!string.IsNullOrEmpty(importDataDialog.FileName))
@@ -237,11 +268,6 @@ namespace RotaryAxisAnalyzer
             Settings ST = new Settings();
             ST.StartPosition = FormStartPosition.CenterScreen;
             ST.Show();
-        }
-
-        private void mainPanel_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void exitBtn_Click(object sender, EventArgs e)

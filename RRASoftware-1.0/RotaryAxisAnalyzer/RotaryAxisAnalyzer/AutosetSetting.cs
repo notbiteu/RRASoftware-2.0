@@ -149,5 +149,10 @@ namespace RotaryAxisAnalyzer
                 mRPMstepper.Text = newValue.ToString("00.00");
             }
         }
+
+        private void autoSetIcon_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
     }
 }

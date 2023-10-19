@@ -8,10 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace RotaryAxisAnalyzer
 {
+    
     public partial class Settings : Form
     {
+        private GeneralSetting generalST;
+        private AutosetSetting autoST;
+
         public Settings()
         {
             InitializeComponent();
@@ -29,18 +34,10 @@ namespace RotaryAxisAnalyzer
             gsBtn.FlatStyle = FlatStyle.Flat;
             gsBtn.FlatAppearance.BorderSize = 0;
 
-            applyBtn.FlatStyle = FlatStyle.Flat;
-            applyBtn.FlatAppearance.BorderSize = 0;
-
-            cancelBtn.FlatStyle = FlatStyle.Flat;
-            cancelBtn.FlatAppearance.BorderSize = 0;
+            
 
         }
 
-        private void settingPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void asBtn_Click(object sender, EventArgs e)
         {
@@ -49,7 +46,10 @@ namespace RotaryAxisAnalyzer
             gsBtn.BackColor = Color.FromArgb(217, 217, 217);
             gsBtn.ForeColor = Color.FromArgb(49, 49, 49);
 
-            AutosetSetting autoST = new AutosetSetting();
+            if (autoST == null)
+            {
+                autoST = new AutosetSetting();
+            }
             settingPanel.Controls.Clear();
             autoST.Dock = DockStyle.Fill;
             settingPanel.Controls.Add(autoST);
@@ -62,7 +62,11 @@ namespace RotaryAxisAnalyzer
             asBtn.BackColor = Color.FromArgb(217, 217, 217);
             asBtn.ForeColor = Color.FromArgb(49, 49, 49);
 
-            GeneralSetting generalST = new GeneralSetting();
+            if (generalST == null)
+            {
+                generalST = new GeneralSetting();
+            }
+
             settingPanel.Controls.Clear();
             generalST.Dock = DockStyle.Fill;
             settingPanel.Controls.Add(generalST);

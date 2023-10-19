@@ -41,6 +41,12 @@ namespace RotaryAxisAnalyzer
             yChannelBtn.Paint += (sender, e) => ChannelButtonDecoration.ChannelBtnDecoration(yChannelBtn, e);
             zChannelBtn.Paint += (sender, e) => ChannelButtonDecoration.ChannelBtnDecoration(zChannelBtn, e);
 
+            //begin with testInfo : UserControl
+            testInfoPage testinfo = new testInfoPage();
+            blank.Controls.Clear();
+            testinfo.Dock = DockStyle.Fill;
+            blank.Controls.Add(testinfo);
+
         }
 
         public void SetData(double[] x, double[] y, double[] z)
@@ -265,6 +271,22 @@ namespace RotaryAxisAnalyzer
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void testInfoBtn_Click(object sender, EventArgs e)
+        {
+            testInfoPage testinfo = new testInfoPage();
+            blank.Controls.Clear();
+            testinfo.Dock = DockStyle.Fill;
+            blank.Controls.Add(testinfo);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            machineInfo machinfo = new machineInfo();
+            blank.Controls.Clear();
+            machinfo.Dock = DockStyle.Fill;
+            blank.Controls.Add(machinfo);
         }
     }
 }

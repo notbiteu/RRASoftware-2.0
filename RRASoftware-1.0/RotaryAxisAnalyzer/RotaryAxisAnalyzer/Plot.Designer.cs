@@ -32,24 +32,18 @@
             this.testInfo = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.testInfoBtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.saveTestBtn = new System.Windows.Forms.Button();
             this.oscTab = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.rrsTab = new System.Windows.Forms.TabPage();
-            this.fftTab = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.testInfoBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.zChannelBtn = new FontAwesome.Sharp.IconButton();
             this.yChannelBtn = new FontAwesome.Sharp.IconButton();
             this.xChannelBtn = new FontAwesome.Sharp.IconButton();
-            this.testInfoPage1 = new RotaryAxisAnalyzer.testInfoPage();
             this.panelDecoration1 = new RotaryAxisAnalyzer.PanelDecoration();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -58,24 +52,26 @@
             this.OscGraphPanel = new System.Windows.Forms.Panel();
             this.OsilloscopePanel = new System.Windows.Forms.Panel();
             this.plotView1 = new OxyPlot.WindowsForms.PlotView();
+            this.rrsTab = new System.Windows.Forms.TabPage();
+            this.fftTab = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.blank = new System.Windows.Forms.Panel();
             this.mainTabControl.SuspendLayout();
             this.testInfo.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel16.SuspendLayout();
             this.oscTab.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.tableLayoutPanel9.SuspendLayout();
-            this.tableLayoutPanel8.SuspendLayout();
             this.panelDecoration1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.OscGraphPanel.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainTabControl
@@ -132,11 +128,64 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(1320, 532);
             this.tableLayoutPanel7.TabIndex = 0;
             // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 1;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel8.Controls.Add(this.testInfoBtn, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.button1, 0, 1);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(10, 10);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(10);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 3;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 130F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 130F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(130, 512);
+            this.tableLayoutPanel8.TabIndex = 0;
+            // 
+            // testInfoBtn
+            // 
+            this.testInfoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.testInfoBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.testInfoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.testInfoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.testInfoBtn.ForeColor = System.Drawing.Color.White;
+            this.testInfoBtn.Image = global::RotaryAxisAnalyzer.Properties.Resources.infomation;
+            this.testInfoBtn.Location = new System.Drawing.Point(3, 3);
+            this.testInfoBtn.Name = "testInfoBtn";
+            this.testInfoBtn.Size = new System.Drawing.Size(124, 124);
+            this.testInfoBtn.TabIndex = 1;
+            this.testInfoBtn.Text = "\r\nTest\r\nInformation";
+            this.testInfoBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.testInfoBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.testInfoBtn.UseVisualStyleBackColor = false;
+            this.testInfoBtn.Click += new System.EventHandler(this.testInfoBtn_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::RotaryAxisAnalyzer.Properties.Resources.computerized;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.Location = new System.Drawing.Point(3, 133);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(124, 124);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "\r\nMachine Information";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // tableLayoutPanel16
             // 
             this.tableLayoutPanel16.ColumnCount = 1;
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel16.Controls.Add(this.panel2, 0, 0);
+            this.tableLayoutPanel16.Controls.Add(this.blank, 0, 0);
             this.tableLayoutPanel16.Controls.Add(this.saveTestBtn, 0, 1);
             this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel16.Location = new System.Drawing.Point(160, 10);
@@ -145,6 +194,7 @@
             this.tableLayoutPanel16.RowCount = 2;
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel16.Size = new System.Drawing.Size(1150, 512);
             this.tableLayoutPanel16.TabIndex = 1;
             // 
@@ -153,7 +203,7 @@
             this.saveTestBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.saveTestBtn.BackColor = System.Drawing.Color.Snow;
             this.saveTestBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveTestBtn.Location = new System.Drawing.Point(518, 451);
+            this.saveTestBtn.Location = new System.Drawing.Point(511, 437);
             this.saveTestBtn.Margin = new System.Windows.Forms.Padding(3, 25, 3, 3);
             this.saveTestBtn.Name = "saveTestBtn";
             this.saveTestBtn.Size = new System.Drawing.Size(128, 38);
@@ -216,116 +266,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(130, 512);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // rrsTab
-            // 
-            this.rrsTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
-            this.rrsTab.Location = new System.Drawing.Point(4, 22);
-            this.rrsTab.Name = "rrsTab";
-            this.rrsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.rrsTab.Size = new System.Drawing.Size(1326, 538);
-            this.rrsTab.TabIndex = 1;
-            this.rrsTab.Text = "Radial - Rotating Sensitive";
-            // 
-            // fftTab
-            // 
-            this.fftTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
-            this.fftTab.Location = new System.Drawing.Point(4, 22);
-            this.fftTab.Name = "fftTab";
-            this.fftTab.Size = new System.Drawing.Size(1326, 538);
-            this.fftTab.TabIndex = 2;
-            this.fftTab.Text = "FFT";
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.ColumnCount = 1;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Controls.Add(this.mainTabControl, 0, 0);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1340, 570);
-            this.tableLayoutPanel5.TabIndex = 1;
-            this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Snow;
-            this.panel2.Controls.Add(this.tableLayoutPanel9);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1164, 426);
-            this.panel2.TabIndex = 0;
-            // 
-            // tableLayoutPanel9
-            // 
-            this.tableLayoutPanel9.ColumnCount = 1;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Controls.Add(this.testInfoPage1, 0, 0);
-            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 1;
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(1164, 426);
-            this.tableLayoutPanel9.TabIndex = 0;
-            // 
-            // tableLayoutPanel8
-            // 
-            this.tableLayoutPanel8.ColumnCount = 1;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.Controls.Add(this.testInfoBtn, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button1, 0, 1);
-            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(10, 10);
-            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(10);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 3;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 130F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 130F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(130, 512);
-            this.tableLayoutPanel8.TabIndex = 0;
-            // 
-            // testInfoBtn
-            // 
-            this.testInfoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.testInfoBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.testInfoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.testInfoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.testInfoBtn.ForeColor = System.Drawing.Color.White;
-            this.testInfoBtn.Image = global::RotaryAxisAnalyzer.Properties.Resources.infomation;
-            this.testInfoBtn.Location = new System.Drawing.Point(3, 3);
-            this.testInfoBtn.Name = "testInfoBtn";
-            this.testInfoBtn.Size = new System.Drawing.Size(124, 124);
-            this.testInfoBtn.TabIndex = 1;
-            this.testInfoBtn.Text = "\r\nTest\r\nInformation";
-            this.testInfoBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.testInfoBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.testInfoBtn.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::RotaryAxisAnalyzer.Properties.Resources.computerized;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.Location = new System.Drawing.Point(3, 133);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 124);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "\r\nMachine Information";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // zChannelBtn
             // 
             this.zChannelBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
@@ -382,14 +322,6 @@
             this.xChannelBtn.Text = "Channel 1\r\nX : ON";
             this.xChannelBtn.UseVisualStyleBackColor = false;
             this.xChannelBtn.Click += new System.EventHandler(this.xChannelBtn_Click);
-            // 
-            // testInfoPage1
-            // 
-            this.testInfoPage1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.testInfoPage1.Location = new System.Drawing.Point(3, 3);
-            this.testInfoPage1.Name = "testInfoPage1";
-            this.testInfoPage1.Size = new System.Drawing.Size(1158, 420);
-            this.testInfoPage1.TabIndex = 0;
             // 
             // panelDecoration1
             // 
@@ -489,6 +421,51 @@
             this.plotView1.ZoomRectangleCursor = System.Windows.Forms.Cursors.SizeNWSE;
             this.plotView1.ZoomVerticalCursor = System.Windows.Forms.Cursors.SizeNS;
             // 
+            // rrsTab
+            // 
+            this.rrsTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
+            this.rrsTab.Location = new System.Drawing.Point(4, 22);
+            this.rrsTab.Name = "rrsTab";
+            this.rrsTab.Padding = new System.Windows.Forms.Padding(3);
+            this.rrsTab.Size = new System.Drawing.Size(1326, 538);
+            this.rrsTab.TabIndex = 1;
+            this.rrsTab.Text = "Radial - Rotating Sensitive";
+            // 
+            // fftTab
+            // 
+            this.fftTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
+            this.fftTab.Location = new System.Drawing.Point(4, 22);
+            this.fftTab.Name = "fftTab";
+            this.fftTab.Size = new System.Drawing.Size(1326, 538);
+            this.fftTab.TabIndex = 2;
+            this.fftTab.Text = "FFT";
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 1;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Controls.Add(this.mainTabControl, 0, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1340, 570);
+            this.tableLayoutPanel5.TabIndex = 1;
+            this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
+            // 
+            // blank
+            // 
+            this.blank.BackColor = System.Drawing.Color.Snow;
+            this.blank.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.blank.Location = new System.Drawing.Point(0, 0);
+            this.blank.Margin = new System.Windows.Forms.Padding(0);
+            this.blank.Name = "blank";
+            this.blank.Size = new System.Drawing.Size(1150, 412);
+            this.blank.TabIndex = 0;
+            // 
             // Plot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -503,20 +480,18 @@
             this.testInfo.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel16.ResumeLayout(false);
             this.oscTab.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.tableLayoutPanel9.ResumeLayout(false);
-            this.tableLayoutPanel8.ResumeLayout(false);
             this.panelDecoration1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.OscGraphPanel.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -546,11 +521,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
         private System.Windows.Forms.Button saveTestBtn;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private testInfoPage testInfoPage1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Button testInfoBtn;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel blank;
     }
 }

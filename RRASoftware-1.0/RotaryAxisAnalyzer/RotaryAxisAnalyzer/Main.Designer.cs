@@ -34,7 +34,6 @@
             this.importDataDialog = new System.Windows.Forms.OpenFileDialog();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.exitBtn = new FontAwesome.Sharp.IconPictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.DateLabel = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -45,12 +44,13 @@
             this.dataStorageBtn = new FontAwesome.Sharp.IconButton();
             this.settingsBtn = new FontAwesome.Sharp.IconButton();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.exitBtn = new FontAwesome.Sharp.IconPictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.exitBtn)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitBtn)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -91,24 +91,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1164, 45);
             this.panel1.TabIndex = 0;
-            // 
-            // exitBtn
-            // 
-            this.exitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.exitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exitBtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.exitBtn.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.exitBtn.ForeColor = System.Drawing.Color.Snow;
-            this.exitBtn.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.exitBtn.IconColor = System.Drawing.Color.Snow;
-            this.exitBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.exitBtn.IconSize = 45;
-            this.exitBtn.Location = new System.Drawing.Point(1114, 0);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(50, 45);
-            this.exitBtn.TabIndex = 0;
-            this.exitBtn.TabStop = false;
-            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // panel2
             // 
@@ -262,6 +244,24 @@
             this.mainPanel.Size = new System.Drawing.Size(1158, 630);
             this.mainPanel.TabIndex = 3;
             // 
+            // exitBtn
+            // 
+            this.exitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.exitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exitBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.exitBtn.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.exitBtn.ForeColor = System.Drawing.Color.Snow;
+            this.exitBtn.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.exitBtn.IconColor = System.Drawing.Color.Snow;
+            this.exitBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.exitBtn.IconSize = 45;
+            this.exitBtn.Location = new System.Drawing.Point(1114, 0);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(50, 45);
+            this.exitBtn.TabIndex = 0;
+            this.exitBtn.TabStop = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,10 +278,10 @@
             this.Load += new System.EventHandler(this.Main_Form_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.exitBtn)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.exitBtn)).EndInit();
             this.ResumeLayout(false);
 
         }
