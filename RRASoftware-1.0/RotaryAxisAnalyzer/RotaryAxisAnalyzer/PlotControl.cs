@@ -1732,15 +1732,15 @@ namespace RotaryAxisAnalyzer
 
 
             // plotting
-
-            plotView1.Dock = DockStyle.Fill;
-            OscPanel.Controls.Add(plotView1);
+            PlotView plotView = new PlotView();
+            plotView.Dock = DockStyle.Fill;
+            OscPanel.Controls.Add(plotView);
 
             // send parameter tp PlotModel
             var model = CreatePlotModel(t, channel1_plot, channel2_plot, channel3_plot);
             
-            plotView1.Model = model;
-            plotView1.Model.InvalidatePlot(true);
+            plotView.Model = model;
+            plotView.Model.InvalidatePlot(true);
         }
 
         private PlotModel CreatePlotModel(double[] x, double[] y1, double[] y2, double[] y3)

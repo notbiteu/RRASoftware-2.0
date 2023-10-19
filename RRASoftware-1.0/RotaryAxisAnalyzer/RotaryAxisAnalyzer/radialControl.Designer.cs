@@ -57,7 +57,7 @@
             this.asyBox = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.radialPanel = new System.Windows.Forms.Panel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tableLayoutPanel1.SuspendLayout();
@@ -103,8 +103,8 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel8, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -123,7 +123,7 @@
             this.panel1.Location = new System.Drawing.Point(20, 20);
             this.panel1.Margin = new System.Windows.Forms.Padding(20);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(724, 604);
+            this.panel1.Size = new System.Drawing.Size(597, 604);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -164,18 +164,18 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090992F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090992F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090992F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(724, 604);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(597, 604);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.rpmBox);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(422, 349);
+            this.panel7.Location = new System.Drawing.Point(351, 349);
             this.panel7.Margin = new System.Windows.Forms.Padding(25);
             this.panel7.Name = "panel7";
             this.panel7.Padding = new System.Windows.Forms.Padding(5);
-            this.panel7.Size = new System.Drawing.Size(203, 4);
+            this.panel7.Size = new System.Drawing.Size(158, 4);
             this.panel7.TabIndex = 10;
             // 
             // rpmBox
@@ -185,18 +185,18 @@
             this.rpmBox.Location = new System.Drawing.Point(5, 5);
             this.rpmBox.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
             this.rpmBox.Name = "rpmBox";
-            this.rpmBox.Size = new System.Drawing.Size(193, 20);
+            this.rpmBox.Size = new System.Drawing.Size(148, 20);
             this.rpmBox.TabIndex = 0;
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.tiryBox);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(422, 295);
+            this.panel6.Location = new System.Drawing.Point(351, 295);
             this.panel6.Margin = new System.Windows.Forms.Padding(25);
             this.panel6.Name = "panel6";
             this.panel6.Padding = new System.Windows.Forms.Padding(5);
-            this.panel6.Size = new System.Drawing.Size(203, 4);
+            this.panel6.Size = new System.Drawing.Size(158, 4);
             this.panel6.TabIndex = 10;
             // 
             // tiryBox
@@ -206,18 +206,18 @@
             this.tiryBox.Location = new System.Drawing.Point(5, 5);
             this.tiryBox.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
             this.tiryBox.Name = "tiryBox";
-            this.tiryBox.Size = new System.Drawing.Size(193, 20);
+            this.tiryBox.Size = new System.Drawing.Size(148, 20);
             this.tiryBox.TabIndex = 0;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.tirxBox);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(422, 241);
+            this.panel5.Location = new System.Drawing.Point(351, 241);
             this.panel5.Margin = new System.Windows.Forms.Padding(25);
             this.panel5.Name = "panel5";
             this.panel5.Padding = new System.Windows.Forms.Padding(5);
-            this.panel5.Size = new System.Drawing.Size(203, 4);
+            this.panel5.Size = new System.Drawing.Size(158, 4);
             this.panel5.TabIndex = 10;
             // 
             // tirxBox
@@ -227,18 +227,18 @@
             this.tirxBox.Location = new System.Drawing.Point(5, 5);
             this.tirxBox.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
             this.tirxBox.Name = "tirxBox";
-            this.tirxBox.Size = new System.Drawing.Size(193, 20);
+            this.tirxBox.Size = new System.Drawing.Size(148, 20);
             this.tirxBox.TabIndex = 0;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.totalBox);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(422, 187);
+            this.panel4.Location = new System.Drawing.Point(351, 187);
             this.panel4.Margin = new System.Windows.Forms.Padding(25);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(5);
-            this.panel4.Size = new System.Drawing.Size(203, 4);
+            this.panel4.Size = new System.Drawing.Size(158, 4);
             this.panel4.TabIndex = 10;
             // 
             // totalBox
@@ -248,17 +248,17 @@
             this.totalBox.Location = new System.Drawing.Point(5, 5);
             this.totalBox.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
             this.totalBox.Name = "totalBox";
-            this.totalBox.Size = new System.Drawing.Size(193, 20);
+            this.totalBox.Size = new System.Drawing.Size(148, 20);
             this.totalBox.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(75, 111);
+            this.label3.Location = new System.Drawing.Point(62, 111);
             this.label3.Margin = new System.Windows.Forms.Padding(3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(247, 48);
+            this.label3.Size = new System.Drawing.Size(202, 48);
             this.label3.TabIndex = 1;
             this.label3.Text = "Asynchronous (µm)";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -267,10 +267,10 @@
             // 
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(75, 57);
+            this.label2.Location = new System.Drawing.Point(62, 57);
             this.label2.Margin = new System.Windows.Forms.Padding(3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(247, 48);
+            this.label2.Size = new System.Drawing.Size(202, 48);
             this.label2.TabIndex = 0;
             this.label2.Text = "Synchronous (µm)";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -279,10 +279,10 @@
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(75, 165);
+            this.label4.Location = new System.Drawing.Point(62, 165);
             this.label4.Margin = new System.Windows.Forms.Padding(3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(247, 48);
+            this.label4.Size = new System.Drawing.Size(202, 48);
             this.label4.TabIndex = 2;
             this.label4.Text = "Total (µm)";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -291,10 +291,10 @@
             // 
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(75, 219);
+            this.label5.Location = new System.Drawing.Point(62, 219);
             this.label5.Margin = new System.Windows.Forms.Padding(3);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(247, 48);
+            this.label5.Size = new System.Drawing.Size(202, 48);
             this.label5.TabIndex = 3;
             this.label5.Text = "TIRX (µm)";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -303,10 +303,10 @@
             // 
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(75, 273);
+            this.label6.Location = new System.Drawing.Point(62, 273);
             this.label6.Margin = new System.Windows.Forms.Padding(3);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(247, 48);
+            this.label6.Size = new System.Drawing.Size(202, 48);
             this.label6.TabIndex = 4;
             this.label6.Text = "TIRY (µm)";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -315,10 +315,10 @@
             // 
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(75, 327);
+            this.label7.Location = new System.Drawing.Point(62, 327);
             this.label7.Margin = new System.Windows.Forms.Padding(3);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(247, 48);
+            this.label7.Size = new System.Drawing.Size(202, 48);
             this.label7.TabIndex = 5;
             this.label7.Text = "RPM";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -327,10 +327,10 @@
             // 
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(75, 381);
+            this.label8.Location = new System.Drawing.Point(62, 381);
             this.label8.Margin = new System.Windows.Forms.Padding(3);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(247, 48);
+            this.label8.Size = new System.Drawing.Size(202, 48);
             this.label8.TabIndex = 6;
             this.label8.Text = "method";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -339,10 +339,10 @@
             // 
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(75, 435);
+            this.label9.Location = new System.Drawing.Point(62, 435);
             this.label9.Margin = new System.Windows.Forms.Padding(3);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(247, 48);
+            this.label9.Size = new System.Drawing.Size(202, 48);
             this.label9.TabIndex = 7;
             this.label9.Text = "Source";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -351,10 +351,10 @@
             // 
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(75, 489);
+            this.label10.Location = new System.Drawing.Point(62, 489);
             this.label10.Margin = new System.Windows.Forms.Padding(3);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(247, 48);
+            this.label10.Size = new System.Drawing.Size(202, 48);
             this.label10.TabIndex = 8;
             this.label10.Text = "Channel";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -363,11 +363,11 @@
             // 
             this.panel2.Controls.Add(this.synBox);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(422, 79);
+            this.panel2.Location = new System.Drawing.Point(351, 79);
             this.panel2.Margin = new System.Windows.Forms.Padding(25);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(5);
-            this.panel2.Size = new System.Drawing.Size(203, 4);
+            this.panel2.Size = new System.Drawing.Size(158, 4);
             this.panel2.TabIndex = 9;
             // 
             // synBox
@@ -378,18 +378,18 @@
             this.synBox.Location = new System.Drawing.Point(5, 5);
             this.synBox.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
             this.synBox.Name = "synBox";
-            this.synBox.Size = new System.Drawing.Size(193, 21);
+            this.synBox.Size = new System.Drawing.Size(148, 21);
             this.synBox.TabIndex = 1;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.asyBox);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(422, 133);
+            this.panel3.Location = new System.Drawing.Point(351, 133);
             this.panel3.Margin = new System.Windows.Forms.Padding(25);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(5);
-            this.panel3.Size = new System.Drawing.Size(203, 4);
+            this.panel3.Size = new System.Drawing.Size(158, 4);
             this.panel3.TabIndex = 10;
             // 
             // asyBox
@@ -399,7 +399,7 @@
             this.asyBox.Location = new System.Drawing.Point(5, 5);
             this.asyBox.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
             this.asyBox.Name = "asyBox";
-            this.asyBox.Size = new System.Drawing.Size(193, 20);
+            this.asyBox.Size = new System.Drawing.Size(148, 20);
             this.asyBox.TabIndex = 0;
             // 
             // panel8
@@ -407,35 +407,35 @@
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.panel8.Controls.Add(this.tableLayoutPanel4);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(784, 20);
+            this.panel8.Location = new System.Drawing.Point(657, 20);
             this.panel8.Margin = new System.Windows.Forms.Padding(20);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(470, 604);
+            this.panel8.Size = new System.Drawing.Size(597, 604);
             this.panel8.TabIndex = 1;
             // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.panel9, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.radialPanel, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(470, 604);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(597, 604);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
-            // panel9
+            // radialPanel
             // 
-            this.panel9.BackColor = System.Drawing.Color.Snow;
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(10, 10);
-            this.panel9.Margin = new System.Windows.Forms.Padding(10);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(450, 523);
-            this.panel9.TabIndex = 0;
+            this.radialPanel.BackColor = System.Drawing.Color.Snow;
+            this.radialPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radialPanel.Location = new System.Drawing.Point(10, 10);
+            this.radialPanel.Margin = new System.Windows.Forms.Padding(10);
+            this.radialPanel.Name = "radialPanel";
+            this.radialPanel.Size = new System.Drawing.Size(577, 523);
+            this.radialPanel.TabIndex = 0;
             // 
             // contextMenuStrip1
             // 
@@ -455,6 +455,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "radialControl";
             this.Size = new System.Drawing.Size(1280, 720);
+            this.Load += new System.EventHandler(this.Form_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -501,7 +502,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel radialPanel;
         private System.Windows.Forms.TextBox rpmBox;
         private System.Windows.Forms.TextBox tiryBox;
         private System.Windows.Forms.TextBox tirxBox;

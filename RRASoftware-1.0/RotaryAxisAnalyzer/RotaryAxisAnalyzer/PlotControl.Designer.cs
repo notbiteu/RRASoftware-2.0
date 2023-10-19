@@ -51,7 +51,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.OscPanel = new System.Windows.Forms.Panel();
-            this.plotView1 = new OxyPlot.WindowsForms.PlotView();
             this.rrsTab = new System.Windows.Forms.TabPage();
             this.radialPanel = new System.Windows.Forms.Panel();
             this.fftTab = new System.Windows.Forms.TabPage();
@@ -70,7 +69,6 @@
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.OscPanel.SuspendLayout();
             this.rrsTab.SuspendLayout();
             this.fftTab.SuspendLayout();
             this.SuspendLayout();
@@ -404,25 +402,13 @@
             // 
             // OscPanel
             // 
-            this.OscPanel.Controls.Add(this.plotView1);
+            this.OscPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.OscPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.OscPanel.Location = new System.Drawing.Point(3, 73);
+            this.OscPanel.Location = new System.Drawing.Point(10, 80);
+            this.OscPanel.Margin = new System.Windows.Forms.Padding(10);
             this.OscPanel.Name = "OscPanel";
-            this.OscPanel.Size = new System.Drawing.Size(1155, 462);
+            this.OscPanel.Size = new System.Drawing.Size(1141, 448);
             this.OscPanel.TabIndex = 1;
-            // 
-            // plotView1
-            // 
-            this.plotView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plotView1.Location = new System.Drawing.Point(0, 0);
-            this.plotView1.Name = "plotView1";
-            this.plotView1.PanCursor = System.Windows.Forms.Cursors.Hand;
-            this.plotView1.Size = new System.Drawing.Size(1155, 462);
-            this.plotView1.TabIndex = 0;
-            this.plotView1.Text = "plotView1";
-            this.plotView1.ZoomHorizontalCursor = System.Windows.Forms.Cursors.SizeWE;
-            this.plotView1.ZoomRectangleCursor = System.Windows.Forms.Cursors.SizeNWSE;
-            this.plotView1.ZoomVerticalCursor = System.Windows.Forms.Cursors.SizeNS;
             // 
             // rrsTab
             // 
@@ -486,7 +472,6 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.OscPanel.ResumeLayout(false);
             this.rrsTab.ResumeLayout(false);
             this.fftTab.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -520,7 +505,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel OscPanel;
-        private OxyPlot.WindowsForms.PlotView plotView1;
         private System.Windows.Forms.Panel radialPanel;
         private System.Windows.Forms.Panel fftPanel;
     }

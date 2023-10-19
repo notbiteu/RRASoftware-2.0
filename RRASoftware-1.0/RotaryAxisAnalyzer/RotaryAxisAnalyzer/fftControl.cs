@@ -1614,9 +1614,9 @@ namespace RotaryAxisAnalyzer
             }
 
             // plotting
-            plotView1 = new PlotView();
-            plotView1.Dock = DockStyle.Fill;
-            fftPanel.Controls.Add(plotView1);
+            plotView = new PlotView();
+            plotView.Dock = DockStyle.Fill;
+            fftPanel.Controls.Add(plotView);
 
             // send parameter to PlotModel
             // convert double[] t to Complex[] t so that can fit in CreatePlotModel
