@@ -20,7 +20,7 @@ namespace RotaryAxisAnalyzer
         public Main_Form()
         {
             InitializeComponent();
-
+            timer1.Start();
             this.FormBorderStyle = FormBorderStyle.None;
 
             //button image insert
@@ -34,7 +34,6 @@ namespace RotaryAxisAnalyzer
             importDataBtn.Paint += (sender, e) => BtnDecoration.ButtonDecoration(importDataBtn, e);
             dataStorageBtn.Paint += (sender, e) => BtnDecoration.ButtonDecoration(dataStorageBtn, e);
             settingsBtn.Paint += (sender, e) => BtnDecoration.ButtonDecoration(settingsBtn, e);
-
 
         }
 
@@ -103,7 +102,7 @@ namespace RotaryAxisAnalyzer
         private void timer1_Tick(object sender, EventArgs e)
         {
             DateTime dateTime = DateTime.Now;
-            this.DateLabel.Text = dateTime.ToString();
+            DateLabel.Text = dateTime.ToString();
         }
 
         private double[][] ReadXYZDataFromCSV(string filePath)
