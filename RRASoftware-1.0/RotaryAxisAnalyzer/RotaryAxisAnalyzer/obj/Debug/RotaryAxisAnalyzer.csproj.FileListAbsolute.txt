@@ -250,3 +250,9 @@ O:\Git\RRASoftware-4.0\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\Rotary
 O:\Git\RRASoftware-4.0\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj\Debug\RotaryAxisAnalyzer.csproj.CopyComplete
 O:\Git\RRASoftware-4.0\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj\Debug\RotaryAxisAnalyzer.exe
 O:\Git\RRASoftware-4.0\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj\Debug\RotaryAxisAnalyzer.pdb
+O:\Git\RRASoftware-4.0\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj\Debug\RotaryAxisAnalyzer.fftControl.resources
+O:\Git\RRASoftware-4.0\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj\Debug\RotaryAxisAnalyzer.radialControl.resources
+O:\Git\RRASoftware-4.0\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\bin\Debug\MathNet.Numerics.dll
+O:\Git\RRASoftware-4.0\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\bin\Debug\System.ValueTuple.dll
+O:\Git\RRASoftware-4.0\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\bin\Debug\MathNet.Numerics.xml
+O:\Git\RRASoftware-4.0\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\bin\Debug\System.ValueTuple.xml

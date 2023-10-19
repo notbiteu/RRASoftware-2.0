@@ -33,6 +33,8 @@
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.testInfoBtn = new System.Windows.Forms.Button();
+            this.machinfoBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.blank = new System.Windows.Forms.Panel();
             this.saveTestBtn = new System.Windows.Forms.Button();
@@ -40,20 +42,20 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.zChannelBtn = new FontAwesome.Sharp.IconButton();
+            this.yChannelBtn = new FontAwesome.Sharp.IconButton();
+            this.xChannelBtn = new FontAwesome.Sharp.IconButton();
             this.panelDecoration1 = new RotaryAxisAnalyzer.PanelDecoration();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.OscPanel = new System.Windows.Forms.Panel();
             this.plotView1 = new OxyPlot.WindowsForms.PlotView();
             this.rrsTab = new System.Windows.Forms.TabPage();
+            this.radialPanel = new System.Windows.Forms.Panel();
             this.fftTab = new System.Windows.Forms.TabPage();
-            this.testInfoBtn = new System.Windows.Forms.Button();
-            this.machinfoBtn = new System.Windows.Forms.Button();
-            this.zChannelBtn = new FontAwesome.Sharp.IconButton();
-            this.yChannelBtn = new FontAwesome.Sharp.IconButton();
-            this.xChannelBtn = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.fftPanel = new System.Windows.Forms.Panel();
             this.mainTabControl.SuspendLayout();
             this.testInfo.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
@@ -67,8 +69,10 @@
             this.panelDecoration1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            this.OscPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.OscPanel.SuspendLayout();
+            this.rrsTab.SuspendLayout();
+            this.fftTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainTabControl
@@ -140,6 +144,42 @@
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(130, 558);
             this.tableLayoutPanel8.TabIndex = 0;
+            // 
+            // testInfoBtn
+            // 
+            this.testInfoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.testInfoBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.testInfoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.testInfoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.testInfoBtn.ForeColor = System.Drawing.Color.White;
+            this.testInfoBtn.Image = global::RotaryAxisAnalyzer.Properties.Resources.infomation;
+            this.testInfoBtn.Location = new System.Drawing.Point(3, 3);
+            this.testInfoBtn.Name = "testInfoBtn";
+            this.testInfoBtn.Size = new System.Drawing.Size(124, 124);
+            this.testInfoBtn.TabIndex = 1;
+            this.testInfoBtn.Text = "\r\nTest\r\nInformation";
+            this.testInfoBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.testInfoBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.testInfoBtn.UseVisualStyleBackColor = false;
+            this.testInfoBtn.Click += new System.EventHandler(this.testInfoBtn_Click);
+            // 
+            // machinfoBtn
+            // 
+            this.machinfoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.machinfoBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.machinfoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.machinfoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.machinfoBtn.ForeColor = System.Drawing.Color.White;
+            this.machinfoBtn.Image = global::RotaryAxisAnalyzer.Properties.Resources.computerized;
+            this.machinfoBtn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.machinfoBtn.Location = new System.Drawing.Point(3, 133);
+            this.machinfoBtn.Name = "machinfoBtn";
+            this.machinfoBtn.Size = new System.Drawing.Size(124, 124);
+            this.machinfoBtn.TabIndex = 2;
+            this.machinfoBtn.Text = "\r\nMachine Information";
+            this.machinfoBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.machinfoBtn.UseVisualStyleBackColor = false;
+            this.machinfoBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // tableLayoutPanel16
             // 
@@ -242,137 +282,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(130, 538);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // panelDecoration1
-            // 
-            this.panelDecoration1.BackColor = System.Drawing.Color.Snow;
-            this.panelDecoration1.Controls.Add(this.tableLayoutPanel3);
-            this.panelDecoration1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDecoration1.Location = new System.Drawing.Point(160, 10);
-            this.panelDecoration1.Margin = new System.Windows.Forms.Padding(10);
-            this.panelDecoration1.Name = "panelDecoration1";
-            this.panelDecoration1.Size = new System.Drawing.Size(1161, 538);
-            this.panelDecoration1.TabIndex = 1;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.OscPanel, 0, 1);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1161, 538);
-            this.tableLayoutPanel3.TabIndex = 0;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 3;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Controls.Add(this.label1, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.pictureBox1, 2, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(5, 5);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(5);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1151, 60);
-            this.tableLayoutPanel4.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(386, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(377, 60);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Osilloscope";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // OscPanel
-            // 
-            this.OscPanel.Controls.Add(this.plotView1);
-            this.OscPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.OscPanel.Location = new System.Drawing.Point(3, 73);
-            this.OscPanel.Name = "OscPanel";
-            this.OscPanel.Size = new System.Drawing.Size(1155, 462);
-            this.OscPanel.TabIndex = 1;
-            // 
-            // plotView1
-            // 
-            this.plotView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plotView1.Location = new System.Drawing.Point(0, 0);
-            this.plotView1.Name = "plotView1";
-            this.plotView1.PanCursor = System.Windows.Forms.Cursors.Hand;
-            this.plotView1.Size = new System.Drawing.Size(1155, 462);
-            this.plotView1.TabIndex = 0;
-            this.plotView1.Text = "plotView1";
-            this.plotView1.ZoomHorizontalCursor = System.Windows.Forms.Cursors.SizeWE;
-            this.plotView1.ZoomRectangleCursor = System.Windows.Forms.Cursors.SizeNWSE;
-            this.plotView1.ZoomVerticalCursor = System.Windows.Forms.Cursors.SizeNS;
-            // 
-            // rrsTab
-            // 
-            this.rrsTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
-            this.rrsTab.Location = new System.Drawing.Point(4, 22);
-            this.rrsTab.Name = "rrsTab";
-            this.rrsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.rrsTab.Size = new System.Drawing.Size(1337, 584);
-            this.rrsTab.TabIndex = 1;
-            this.rrsTab.Text = "Radial - Rotating Sensitive";
-            // 
-            // fftTab
-            // 
-            this.fftTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
-            this.fftTab.Location = new System.Drawing.Point(4, 22);
-            this.fftTab.Name = "fftTab";
-            this.fftTab.Size = new System.Drawing.Size(1337, 584);
-            this.fftTab.TabIndex = 2;
-            this.fftTab.Text = "FFT";
-            // 
-            // testInfoBtn
-            // 
-            this.testInfoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.testInfoBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.testInfoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.testInfoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.testInfoBtn.ForeColor = System.Drawing.Color.White;
-            this.testInfoBtn.Image = global::RotaryAxisAnalyzer.Properties.Resources.infomation;
-            this.testInfoBtn.Location = new System.Drawing.Point(3, 3);
-            this.testInfoBtn.Name = "testInfoBtn";
-            this.testInfoBtn.Size = new System.Drawing.Size(124, 124);
-            this.testInfoBtn.TabIndex = 1;
-            this.testInfoBtn.Text = "\r\nTest\r\nInformation";
-            this.testInfoBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.testInfoBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.testInfoBtn.UseVisualStyleBackColor = false;
-            this.testInfoBtn.Click += new System.EventHandler(this.testInfoBtn_Click);
-            // 
-            // machinfoBtn
-            // 
-            this.machinfoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.machinfoBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.machinfoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.machinfoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.machinfoBtn.ForeColor = System.Drawing.Color.White;
-            this.machinfoBtn.Image = global::RotaryAxisAnalyzer.Properties.Resources.computerized;
-            this.machinfoBtn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.machinfoBtn.Location = new System.Drawing.Point(3, 133);
-            this.machinfoBtn.Name = "machinfoBtn";
-            this.machinfoBtn.Size = new System.Drawing.Size(124, 124);
-            this.machinfoBtn.TabIndex = 2;
-            this.machinfoBtn.Text = "\r\nMachine Information";
-            this.machinfoBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.machinfoBtn.UseVisualStyleBackColor = false;
-            this.machinfoBtn.Click += new System.EventHandler(this.button1_Click);
-            // 
             // zChannelBtn
             // 
             this.zChannelBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
@@ -427,6 +336,60 @@
             this.xChannelBtn.Text = "Channel 1\r\nX : ON";
             this.xChannelBtn.UseVisualStyleBackColor = false;
             // 
+            // panelDecoration1
+            // 
+            this.panelDecoration1.BackColor = System.Drawing.Color.Snow;
+            this.panelDecoration1.Controls.Add(this.tableLayoutPanel3);
+            this.panelDecoration1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDecoration1.Location = new System.Drawing.Point(160, 10);
+            this.panelDecoration1.Margin = new System.Windows.Forms.Padding(10);
+            this.panelDecoration1.Name = "panelDecoration1";
+            this.panelDecoration1.Size = new System.Drawing.Size(1161, 538);
+            this.panelDecoration1.TabIndex = 1;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.OscPanel, 0, 1);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1161, 538);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.Controls.Add(this.label1, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBox1, 2, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(5, 5);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(5);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1151, 60);
+            this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(386, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(377, 60);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Osilloscope";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::RotaryAxisAnalyzer.Properties.Resources.Legend;
@@ -438,6 +401,67 @@
             this.pictureBox1.Size = new System.Drawing.Size(125, 60);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // OscPanel
+            // 
+            this.OscPanel.Controls.Add(this.plotView1);
+            this.OscPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.OscPanel.Location = new System.Drawing.Point(3, 73);
+            this.OscPanel.Name = "OscPanel";
+            this.OscPanel.Size = new System.Drawing.Size(1155, 462);
+            this.OscPanel.TabIndex = 1;
+            // 
+            // plotView1
+            // 
+            this.plotView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plotView1.Location = new System.Drawing.Point(0, 0);
+            this.plotView1.Name = "plotView1";
+            this.plotView1.PanCursor = System.Windows.Forms.Cursors.Hand;
+            this.plotView1.Size = new System.Drawing.Size(1155, 462);
+            this.plotView1.TabIndex = 0;
+            this.plotView1.Text = "plotView1";
+            this.plotView1.ZoomHorizontalCursor = System.Windows.Forms.Cursors.SizeWE;
+            this.plotView1.ZoomRectangleCursor = System.Windows.Forms.Cursors.SizeNWSE;
+            this.plotView1.ZoomVerticalCursor = System.Windows.Forms.Cursors.SizeNS;
+            // 
+            // rrsTab
+            // 
+            this.rrsTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
+            this.rrsTab.Controls.Add(this.radialPanel);
+            this.rrsTab.Location = new System.Drawing.Point(4, 22);
+            this.rrsTab.Name = "rrsTab";
+            this.rrsTab.Padding = new System.Windows.Forms.Padding(3);
+            this.rrsTab.Size = new System.Drawing.Size(1337, 584);
+            this.rrsTab.TabIndex = 1;
+            this.rrsTab.Text = "Radial - Rotating Sensitive";
+            // 
+            // radialPanel
+            // 
+            this.radialPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radialPanel.Location = new System.Drawing.Point(3, 3);
+            this.radialPanel.Name = "radialPanel";
+            this.radialPanel.Size = new System.Drawing.Size(1331, 578);
+            this.radialPanel.TabIndex = 0;
+            this.radialPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.radialPanel_Paint);
+            // 
+            // fftTab
+            // 
+            this.fftTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
+            this.fftTab.Controls.Add(this.fftPanel);
+            this.fftTab.Location = new System.Drawing.Point(4, 22);
+            this.fftTab.Name = "fftTab";
+            this.fftTab.Size = new System.Drawing.Size(1337, 584);
+            this.fftTab.TabIndex = 2;
+            this.fftTab.Text = "FFT";
+            // 
+            // fftPanel
+            // 
+            this.fftPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fftPanel.Location = new System.Drawing.Point(0, 0);
+            this.fftPanel.Name = "fftPanel";
+            this.fftPanel.Size = new System.Drawing.Size(1337, 584);
+            this.fftPanel.TabIndex = 0;
+            this.fftPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.fftPanel_Paint);
             // 
             // PlotControl
             // 
@@ -461,8 +485,10 @@
             this.panelDecoration1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
-            this.OscPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.OscPanel.ResumeLayout(false);
+            this.rrsTab.ResumeLayout(false);
+            this.fftTab.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -495,5 +521,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel OscPanel;
         private OxyPlot.WindowsForms.PlotView plotView1;
+        private System.Windows.Forms.Panel radialPanel;
+        private System.Windows.Forms.Panel fftPanel;
     }
 }

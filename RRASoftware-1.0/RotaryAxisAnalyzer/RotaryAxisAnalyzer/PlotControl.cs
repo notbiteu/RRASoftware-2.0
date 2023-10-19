@@ -21,6 +21,8 @@ namespace RotaryAxisAnalyzer
     {
         private testInfoPage testinfo;
         private machineInfo machinfo;
+        private radialControl radControl;
+        private fftControl fftControl;
 
         public double[] X_Axis { get; private set; }
         public double[] Y_Axis { get; private set; }
@@ -44,6 +46,25 @@ namespace RotaryAxisAnalyzer
             blank.Controls.Clear();
             testinfo.Dock = DockStyle.Fill;
             blank.Controls.Add(testinfo);
+
+            if (radControl == null)
+            {
+                radControl = new radialControl();
+            }
+
+            radialPanel.Controls.Clear();
+            radControl.Dock = DockStyle.Fill;
+            radialPanel.Controls.Add(radControl);
+
+            if (fftControl == null)
+            {
+                fftControl = new fftControl();
+            }
+
+            fftPanel.Controls.Clear();
+            fftControl.Dock = DockStyle.Fill;
+            fftPanel.Controls.Add(fftControl);
+
         }
 
         private void testInfoBtn_Click(object sender, EventArgs e)
@@ -1799,6 +1820,16 @@ namespace RotaryAxisAnalyzer
             measurecoll.InsertOne(document);
             custcoll.InsertOne(custdoc);
 
+
+        }
+
+        private void radialPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fftPanel_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
