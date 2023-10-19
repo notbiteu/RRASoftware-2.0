@@ -40,7 +40,6 @@ namespace RotaryAxisAnalyzer
             var filter = new BsonDocument();
             var doc = measurecoll.Find(filter).ToList();
 
-            // Bind the data to the DataGridView
             dataStorageTable.DataSource = DtGridView(doc);
         }
 
@@ -48,7 +47,6 @@ namespace RotaryAxisAnalyzer
         {
             var dataTable = new DataTable();
 
-            // Add columns to the DataTable (adjust the columns to match your document structure)
             dataTable.Columns.Add("Test title");
             dataTable.Columns.Add("Machine Name");
             dataTable.Columns.Add("Machine Serial Number");
@@ -57,7 +55,6 @@ namespace RotaryAxisAnalyzer
 
             foreach (var document in doc)
             {
-                // Create a new row for each document and populate it
                 var row = dataTable.NewRow();
                 row["Test title"] = document.GetValue("testTitle").AsString;
                 row["Operator Name"] = document.GetValue("operatorName").AsString;

@@ -105,6 +105,7 @@ namespace RotaryAxisAnalyzer
             DateLabel.Text = dateTime.ToString();
         }
 
+        //Read Data from CSV [undone]
         private double[][] ReadXYZDataFromCSV(string filePath)
         {
             try
