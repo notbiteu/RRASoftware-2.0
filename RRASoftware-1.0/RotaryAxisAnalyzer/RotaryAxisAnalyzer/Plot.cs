@@ -257,6 +257,8 @@ namespace RotaryAxisAnalyzer
 
         private void testInfoBtn_Click(object sender, EventArgs e)
         {
+            
+
             testInfoPage testinfo = new testInfoPage();
 
             blank.Controls.Clear();
@@ -266,6 +268,7 @@ namespace RotaryAxisAnalyzer
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             machineInfo machinfo = new machineInfo();
             blank.Controls.Clear();
             machinfo.Dock = DockStyle.Fill;

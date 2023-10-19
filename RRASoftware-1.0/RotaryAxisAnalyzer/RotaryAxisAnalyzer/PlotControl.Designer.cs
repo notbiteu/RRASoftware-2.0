@@ -34,7 +34,7 @@
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.testInfoBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.machinfoBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.blank = new System.Windows.Forms.Panel();
             this.saveTestBtn = new System.Windows.Forms.Button();
@@ -129,7 +129,7 @@
             this.tableLayoutPanel8.ColumnCount = 1;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel8.Controls.Add(this.testInfoBtn, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button1, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.machinfoBtn, 0, 1);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(10, 10);
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(10);
@@ -159,23 +159,23 @@
             this.testInfoBtn.UseVisualStyleBackColor = false;
             this.testInfoBtn.Click += new System.EventHandler(this.testInfoBtn_Click);
             // 
-            // button1
+            // machinfoBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::RotaryAxisAnalyzer.Properties.Resources.computerized;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.Location = new System.Drawing.Point(3, 133);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 124);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "\r\nMachine Information";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.machinfoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.machinfoBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.machinfoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.machinfoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.machinfoBtn.ForeColor = System.Drawing.Color.White;
+            this.machinfoBtn.Image = global::RotaryAxisAnalyzer.Properties.Resources.computerized;
+            this.machinfoBtn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.machinfoBtn.Location = new System.Drawing.Point(3, 133);
+            this.machinfoBtn.Name = "machinfoBtn";
+            this.machinfoBtn.Size = new System.Drawing.Size(124, 124);
+            this.machinfoBtn.TabIndex = 2;
+            this.machinfoBtn.Text = "\r\nMachine Information";
+            this.machinfoBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.machinfoBtn.UseVisualStyleBackColor = false;
+            this.machinfoBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // tableLayoutPanel16
             // 
@@ -475,7 +475,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Button testInfoBtn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button machinfoBtn;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
         private System.Windows.Forms.Panel blank;
         private System.Windows.Forms.Button saveTestBtn;
