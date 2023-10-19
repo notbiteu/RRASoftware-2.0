@@ -33,8 +33,6 @@
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.testInfoBtn = new System.Windows.Forms.Button();
-            this.machinfoBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.blank = new System.Windows.Forms.Panel();
             this.saveTestBtn = new System.Windows.Forms.Button();
@@ -42,18 +40,20 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.zChannelBtn = new FontAwesome.Sharp.IconButton();
-            this.yChannelBtn = new FontAwesome.Sharp.IconButton();
-            this.xChannelBtn = new FontAwesome.Sharp.IconButton();
             this.panelDecoration1 = new RotaryAxisAnalyzer.PanelDecoration();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.OscPanel = new System.Windows.Forms.Panel();
             this.plotView1 = new OxyPlot.WindowsForms.PlotView();
             this.rrsTab = new System.Windows.Forms.TabPage();
             this.fftTab = new System.Windows.Forms.TabPage();
+            this.testInfoBtn = new System.Windows.Forms.Button();
+            this.machinfoBtn = new System.Windows.Forms.Button();
+            this.zChannelBtn = new FontAwesome.Sharp.IconButton();
+            this.yChannelBtn = new FontAwesome.Sharp.IconButton();
+            this.xChannelBtn = new FontAwesome.Sharp.IconButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mainTabControl.SuspendLayout();
             this.testInfo.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
@@ -67,8 +67,8 @@
             this.panelDecoration1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.OscPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // mainTabControl
@@ -140,42 +140,6 @@
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(130, 558);
             this.tableLayoutPanel8.TabIndex = 0;
-            // 
-            // testInfoBtn
-            // 
-            this.testInfoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.testInfoBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.testInfoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.testInfoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.testInfoBtn.ForeColor = System.Drawing.Color.White;
-            this.testInfoBtn.Image = global::RotaryAxisAnalyzer.Properties.Resources.infomation;
-            this.testInfoBtn.Location = new System.Drawing.Point(3, 3);
-            this.testInfoBtn.Name = "testInfoBtn";
-            this.testInfoBtn.Size = new System.Drawing.Size(124, 124);
-            this.testInfoBtn.TabIndex = 1;
-            this.testInfoBtn.Text = "\r\nTest\r\nInformation";
-            this.testInfoBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.testInfoBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.testInfoBtn.UseVisualStyleBackColor = false;
-            this.testInfoBtn.Click += new System.EventHandler(this.testInfoBtn_Click);
-            // 
-            // machinfoBtn
-            // 
-            this.machinfoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.machinfoBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.machinfoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.machinfoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.machinfoBtn.ForeColor = System.Drawing.Color.White;
-            this.machinfoBtn.Image = global::RotaryAxisAnalyzer.Properties.Resources.computerized;
-            this.machinfoBtn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.machinfoBtn.Location = new System.Drawing.Point(3, 133);
-            this.machinfoBtn.Name = "machinfoBtn";
-            this.machinfoBtn.Size = new System.Drawing.Size(124, 124);
-            this.machinfoBtn.TabIndex = 2;
-            this.machinfoBtn.Text = "\r\nMachine Information";
-            this.machinfoBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.machinfoBtn.UseVisualStyleBackColor = false;
-            this.machinfoBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // tableLayoutPanel16
             // 
@@ -278,60 +242,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(130, 538);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // zChannelBtn
-            // 
-            this.zChannelBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.zChannelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.zChannelBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.zChannelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.zChannelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zChannelBtn.ForeColor = System.Drawing.Color.Snow;
-            this.zChannelBtn.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.zChannelBtn.IconColor = System.Drawing.Color.Black;
-            this.zChannelBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.zChannelBtn.Location = new System.Drawing.Point(3, 143);
-            this.zChannelBtn.Name = "zChannelBtn";
-            this.zChannelBtn.Size = new System.Drawing.Size(124, 64);
-            this.zChannelBtn.TabIndex = 2;
-            this.zChannelBtn.Text = "Channel 1\r\nZ : ON";
-            this.zChannelBtn.UseVisualStyleBackColor = false;
-            // 
-            // yChannelBtn
-            // 
-            this.yChannelBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(12)))));
-            this.yChannelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.yChannelBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.yChannelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.yChannelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yChannelBtn.ForeColor = System.Drawing.Color.Snow;
-            this.yChannelBtn.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.yChannelBtn.IconColor = System.Drawing.Color.Black;
-            this.yChannelBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.yChannelBtn.Location = new System.Drawing.Point(3, 73);
-            this.yChannelBtn.Name = "yChannelBtn";
-            this.yChannelBtn.Size = new System.Drawing.Size(124, 64);
-            this.yChannelBtn.TabIndex = 1;
-            this.yChannelBtn.Text = "Channel 1\r\nY : ON";
-            this.yChannelBtn.UseVisualStyleBackColor = false;
-            // 
-            // xChannelBtn
-            // 
-            this.xChannelBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(190)))), ((int)(((byte)(36)))));
-            this.xChannelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.xChannelBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xChannelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.xChannelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xChannelBtn.ForeColor = System.Drawing.Color.Snow;
-            this.xChannelBtn.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.xChannelBtn.IconColor = System.Drawing.Color.Black;
-            this.xChannelBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.xChannelBtn.Location = new System.Drawing.Point(3, 3);
-            this.xChannelBtn.Name = "xChannelBtn";
-            this.xChannelBtn.Size = new System.Drawing.Size(124, 64);
-            this.xChannelBtn.TabIndex = 0;
-            this.xChannelBtn.Text = "Channel 1\r\nX : ON";
-            this.xChannelBtn.UseVisualStyleBackColor = false;
-            // 
             // panelDecoration1
             // 
             this.panelDecoration1.BackColor = System.Drawing.Color.Snow;
@@ -386,18 +296,6 @@
             this.label1.Text = "Osilloscope";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::RotaryAxisAnalyzer.Properties.Resources.Legend;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Location = new System.Drawing.Point(1026, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(125, 60);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // OscPanel
             // 
             this.OscPanel.Controls.Add(this.plotView1);
@@ -439,6 +337,108 @@
             this.fftTab.TabIndex = 2;
             this.fftTab.Text = "FFT";
             // 
+            // testInfoBtn
+            // 
+            this.testInfoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.testInfoBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.testInfoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.testInfoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.testInfoBtn.ForeColor = System.Drawing.Color.White;
+            this.testInfoBtn.Image = global::RotaryAxisAnalyzer.Properties.Resources.infomation;
+            this.testInfoBtn.Location = new System.Drawing.Point(3, 3);
+            this.testInfoBtn.Name = "testInfoBtn";
+            this.testInfoBtn.Size = new System.Drawing.Size(124, 124);
+            this.testInfoBtn.TabIndex = 1;
+            this.testInfoBtn.Text = "\r\nTest\r\nInformation";
+            this.testInfoBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.testInfoBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.testInfoBtn.UseVisualStyleBackColor = false;
+            this.testInfoBtn.Click += new System.EventHandler(this.testInfoBtn_Click);
+            // 
+            // machinfoBtn
+            // 
+            this.machinfoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.machinfoBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.machinfoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.machinfoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.machinfoBtn.ForeColor = System.Drawing.Color.White;
+            this.machinfoBtn.Image = global::RotaryAxisAnalyzer.Properties.Resources.computerized;
+            this.machinfoBtn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.machinfoBtn.Location = new System.Drawing.Point(3, 133);
+            this.machinfoBtn.Name = "machinfoBtn";
+            this.machinfoBtn.Size = new System.Drawing.Size(124, 124);
+            this.machinfoBtn.TabIndex = 2;
+            this.machinfoBtn.Text = "\r\nMachine Information";
+            this.machinfoBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.machinfoBtn.UseVisualStyleBackColor = false;
+            this.machinfoBtn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // zChannelBtn
+            // 
+            this.zChannelBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.zChannelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.zChannelBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.zChannelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.zChannelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zChannelBtn.ForeColor = System.Drawing.Color.Snow;
+            this.zChannelBtn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.zChannelBtn.IconColor = System.Drawing.Color.Black;
+            this.zChannelBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.zChannelBtn.Location = new System.Drawing.Point(3, 143);
+            this.zChannelBtn.Name = "zChannelBtn";
+            this.zChannelBtn.Size = new System.Drawing.Size(124, 64);
+            this.zChannelBtn.TabIndex = 2;
+            this.zChannelBtn.Text = "Channel 1\r\nZ : ON";
+            this.zChannelBtn.UseVisualStyleBackColor = false;
+            // 
+            // yChannelBtn
+            // 
+            this.yChannelBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(12)))));
+            this.yChannelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yChannelBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.yChannelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yChannelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yChannelBtn.ForeColor = System.Drawing.Color.Snow;
+            this.yChannelBtn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.yChannelBtn.IconColor = System.Drawing.Color.Black;
+            this.yChannelBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.yChannelBtn.Location = new System.Drawing.Point(3, 73);
+            this.yChannelBtn.Name = "yChannelBtn";
+            this.yChannelBtn.Size = new System.Drawing.Size(124, 64);
+            this.yChannelBtn.TabIndex = 1;
+            this.yChannelBtn.Text = "Channel 1\r\nY : ON";
+            this.yChannelBtn.UseVisualStyleBackColor = false;
+            // 
+            // xChannelBtn
+            // 
+            this.xChannelBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(190)))), ((int)(((byte)(36)))));
+            this.xChannelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.xChannelBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xChannelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.xChannelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xChannelBtn.ForeColor = System.Drawing.Color.Snow;
+            this.xChannelBtn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.xChannelBtn.IconColor = System.Drawing.Color.Black;
+            this.xChannelBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.xChannelBtn.Location = new System.Drawing.Point(3, 3);
+            this.xChannelBtn.Name = "xChannelBtn";
+            this.xChannelBtn.Size = new System.Drawing.Size(124, 64);
+            this.xChannelBtn.TabIndex = 0;
+            this.xChannelBtn.Text = "Channel 1\r\nX : ON";
+            this.xChannelBtn.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::RotaryAxisAnalyzer.Properties.Resources.Legend;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Location = new System.Drawing.Point(1026, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(125, 60);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // PlotControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -461,8 +461,8 @@
             this.panelDecoration1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.OscPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -32,6 +32,7 @@ namespace RotaryAxisAnalyzer
         {
             InitializeComponent();
 
+            machinfoBtn.Image = Properties.Resources.computerized_b;
             machinfoBtn.BackColor = Color.FromArgb(217, 217, 217);
             machinfoBtn.ForeColor = Color.FromArgb(49, 49, 49);
 
@@ -47,6 +48,8 @@ namespace RotaryAxisAnalyzer
 
         private void testInfoBtn_Click(object sender, EventArgs e)
         {
+            machinfoBtn.Image = Properties.Resources.computerized_b;
+            testInfoBtn.Image = Properties.Resources.infomation;
             testInfoBtn.BackColor = Color.FromArgb(49, 49, 49);
             testInfoBtn.ForeColor = Color.FromArgb(217, 217, 217);
             machinfoBtn.BackColor = Color.FromArgb(217, 217, 217);
@@ -64,6 +67,8 @@ namespace RotaryAxisAnalyzer
 
         private void button1_Click(object sender, EventArgs e)
         {
+            machinfoBtn.Image = Properties.Resources.computerized;
+            testInfoBtn.Image = Properties.Resources.infomation_b;
             machinfoBtn.BackColor = Color.FromArgb(49, 49, 49);
             machinfoBtn.ForeColor = Color.FromArgb(217, 217, 217);
             testInfoBtn.BackColor = Color.FromArgb(217, 217, 217);

@@ -317,6 +317,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="mongocrypt.dll" />
+    <None Include="Resources\infomation_b.png" />
+    <None Include="Resources\computerized_b.png" />
     <None Include="Resources\wrench-w.png" />
     <None Include="Resources\wrench-b.png" />
     <None Include="Resources\control-w.png" />

@@ -83,6 +83,16 @@ namespace RotaryAxisAnalyzer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap computerized_b {
+            get {
+                object obj = ResourceManager.GetObject("computerized_b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap configuration {
             get {
                 object obj = ResourceManager.GetObject("configuration", resourceCulture);
@@ -126,6 +136,16 @@ namespace RotaryAxisAnalyzer.Properties {
         internal static System.Drawing.Bitmap infomation {
             get {
                 object obj = ResourceManager.GetObject("infomation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap infomation_b {
+            get {
+                object obj = ResourceManager.GetObject("infomation_b", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
