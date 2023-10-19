@@ -276,6 +276,7 @@ namespace RotaryAxisAnalyzer
         private void testInfoBtn_Click(object sender, EventArgs e)
         {
             testInfoPage testinfo = new testInfoPage();
+
             blank.Controls.Clear();
             testinfo.Dock = DockStyle.Fill;
             blank.Controls.Add(testinfo);
@@ -288,6 +289,12 @@ namespace RotaryAxisAnalyzer
             machinfo.Dock = DockStyle.Fill;
             blank.Controls.Add(machinfo);
         }
+
+        private void saveTestBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
 

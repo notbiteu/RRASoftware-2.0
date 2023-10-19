@@ -223,6 +223,12 @@
     <Compile Include="Plot.Designer.cs">
       <DependentUpon>Plot.cs</DependentUpon>
     </Compile>
+    <Compile Include="PlotControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlotControl.Designer.cs">
+      <DependentUpon>PlotControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs">
@@ -257,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plot.resx">
       <DependentUpon>Plot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlotControl.resx">
+      <DependentUpon>PlotControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

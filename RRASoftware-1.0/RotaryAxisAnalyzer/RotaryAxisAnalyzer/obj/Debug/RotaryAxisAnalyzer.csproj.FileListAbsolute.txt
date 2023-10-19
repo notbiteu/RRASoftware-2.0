@@ -178,3 +178,4 @@ O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\bin
 O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\bin\Debug\Microsoft.Bcl.HashCode.dll
 O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\bin\Debug\CsvHelper.xml
 O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\bin\Debug\Microsoft.Bcl.HashCode.xml
+O:\Git\RRASoftware-2.0\RRASoftware-1.0\RotaryAxisAnalyzer\RotaryAxisAnalyzer\obj\Debug\RotaryAxisAnalyzer.PlotControl.resources

@@ -20,14 +20,20 @@ namespace RotaryAxisAnalyzer
         public Settings()
         {
             InitializeComponent();
-            this.TopMost = true;
+            //top most
+            this.TopMost = true; //have to fix it suppose to float in program not outside
 
-            GeneralSetting generalST = new GeneralSetting();
+            //save value in input when swap User Control
+            if (generalST == null)
+            {
+                generalST = new GeneralSetting();
+            }
+
             settingPanel.Controls.Clear();
             generalST.Dock = DockStyle.Fill;
             settingPanel.Controls.Add(generalST);
-            //Btn Design
 
+            //Btn Design
             asBtn.FlatStyle = FlatStyle.Flat;
             asBtn.FlatAppearance.BorderSize = 0;
 
@@ -50,6 +56,7 @@ namespace RotaryAxisAnalyzer
             {
                 autoST = new AutosetSetting();
             }
+
             settingPanel.Controls.Clear();
             autoST.Dock = DockStyle.Fill;
             settingPanel.Controls.Add(autoST);

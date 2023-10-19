@@ -36,6 +36,7 @@
             this.testInfoBtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
+            this.blank = new System.Windows.Forms.Panel();
             this.saveTestBtn = new System.Windows.Forms.Button();
             this.oscTab = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -55,7 +56,6 @@
             this.rrsTab = new System.Windows.Forms.TabPage();
             this.fftTab = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.blank = new System.Windows.Forms.Panel();
             this.mainTabControl.SuspendLayout();
             this.testInfo.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
@@ -198,6 +198,16 @@
             this.tableLayoutPanel16.Size = new System.Drawing.Size(1150, 512);
             this.tableLayoutPanel16.TabIndex = 1;
             // 
+            // blank
+            // 
+            this.blank.BackColor = System.Drawing.Color.Snow;
+            this.blank.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.blank.Location = new System.Drawing.Point(0, 0);
+            this.blank.Margin = new System.Windows.Forms.Padding(0);
+            this.blank.Name = "blank";
+            this.blank.Size = new System.Drawing.Size(1150, 412);
+            this.blank.TabIndex = 0;
+            // 
             // saveTestBtn
             // 
             this.saveTestBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -210,6 +220,7 @@
             this.saveTestBtn.TabIndex = 1;
             this.saveTestBtn.Text = "Save Test";
             this.saveTestBtn.UseVisualStyleBackColor = false;
+            this.saveTestBtn.Click += new System.EventHandler(this.saveTestBtn_Click);
             // 
             // oscTab
             // 
@@ -455,16 +466,6 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(1340, 570);
             this.tableLayoutPanel5.TabIndex = 1;
             this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
-            // 
-            // blank
-            // 
-            this.blank.BackColor = System.Drawing.Color.Snow;
-            this.blank.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.blank.Location = new System.Drawing.Point(0, 0);
-            this.blank.Margin = new System.Windows.Forms.Padding(0);
-            this.blank.Name = "blank";
-            this.blank.Size = new System.Drawing.Size(1150, 412);
-            this.blank.TabIndex = 0;
             // 
             // Plot
             // 

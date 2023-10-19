@@ -18,7 +18,9 @@ namespace RotaryAxisAnalyzer
     
     public partial class Main_Form : Form
     {
-        
+        private PlotControl plotControl;
+        private Plot plotForm;
+
         Timer delayTimer;
         private PlotView plotView;
 
@@ -127,11 +129,17 @@ namespace RotaryAxisAnalyzer
         //Btn Event
         private void plotBtn_Click_1(object sender, EventArgs e)
         {
-            Plot plotForm = new Plot();
-            Plot plotControl = new Plot();
+            if (plotControl == null)
+            {
+                plotControl = new PlotControl();
+            }
             mainPanel.Controls.Clear();
             plotControl.Dock = DockStyle.Fill;
             mainPanel.Controls.Add(plotControl);
+
+            /*mainPanel.Controls.Clear();
+            plotControl.Dock = DockStyle.Fill;
+            mainPanel.Controls.Add(plotControl);*/
 
         }
 
@@ -206,7 +214,7 @@ namespace RotaryAxisAnalyzer
 
         private void importDataBtn_Click(object sender, EventArgs e)
         {
-            //define path to open as default
+            //define path to open as default path
             string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             string configFolderName = "RRAConfig";
             string saveDataFolderName = "SaveDataRRA";
@@ -251,13 +259,16 @@ namespace RotaryAxisAnalyzer
                         Console.WriteLine(value);
                     }
 
-                    Plot plotForm = new Plot();
-                    plotForm.SetData(importedXData, importedYData, importedZData);
-                    loadform(plotForm);
+                    if (plotControl == null)
+                    {
+                        plotControl = new PlotControl();
+                    }
+                    plotControl.SetData(importedXData, importedYData, importedZData);
+                    loadform(plotControl);
                 }
                 else
                 {
-                    Console.WriteLine("Nothing Here at the first time");
+                    Console.WriteLine("Nothing Here bro");
                 }
             }
         }
