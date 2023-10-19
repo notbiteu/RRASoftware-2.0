@@ -40,11 +40,11 @@
             this.machNameBox = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.serialNumBox = new System.Windows.Forms.TextBox();
+            this.SNumMachBox = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.machManufBox = new System.Windows.Forms.TextBox();
-            this.axisBox1 = new System.Windows.Forms.ComboBox();
+            this.axisBox = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -118,7 +118,7 @@
             this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.panel5, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.axisBox1, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.axisBox, 1, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(53, 23);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -202,6 +202,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(635, 31);
             this.tableLayoutPanel3.TabIndex = 0;
+            this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
             // 
             // machNameBox
             // 
@@ -227,7 +228,7 @@
             // 
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.serialNumBox, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.SNumMachBox, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -236,15 +237,15 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(635, 31);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
-            // serialNumBox
+            // SNumMachBox
             // 
-            this.serialNumBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.serialNumBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
-            this.serialNumBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.serialNumBox.Location = new System.Drawing.Point(3, 8);
-            this.serialNumBox.Name = "serialNumBox";
-            this.serialNumBox.Size = new System.Drawing.Size(629, 14);
-            this.serialNumBox.TabIndex = 0;
+            this.SNumMachBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.SNumMachBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
+            this.SNumMachBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SNumMachBox.Location = new System.Drawing.Point(3, 8);
+            this.SNumMachBox.Name = "SNumMachBox";
+            this.SNumMachBox.Size = new System.Drawing.Size(629, 14);
+            this.SNumMachBox.TabIndex = 0;
             // 
             // panel5
             // 
@@ -279,19 +280,19 @@
             this.machManufBox.Size = new System.Drawing.Size(629, 14);
             this.machManufBox.TabIndex = 0;
             // 
-            // axisBox1
+            // axisBox
             // 
-            this.axisBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.axisBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
-            this.axisBox1.FormattingEnabled = true;
-            this.axisBox1.Items.AddRange(new object[] {
+            this.axisBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.axisBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
+            this.axisBox.FormattingEnabled = true;
+            this.axisBox.Items.AddRange(new object[] {
             "X",
             "Y",
             "Z"});
-            this.axisBox1.Location = new System.Drawing.Point(193, 139);
-            this.axisBox1.Name = "axisBox1";
-            this.axisBox1.Size = new System.Drawing.Size(635, 23);
-            this.axisBox1.TabIndex = 8;
+            this.axisBox.Location = new System.Drawing.Point(193, 138);
+            this.axisBox.Name = "axisBox";
+            this.axisBox.Size = new System.Drawing.Size(635, 23);
+            this.axisBox.TabIndex = 8;
             // 
             // tableLayoutPanel5
             // 
@@ -511,11 +512,11 @@
         private System.Windows.Forms.TextBox machNameBox;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.TextBox serialNumBox;
+        private System.Windows.Forms.TextBox SNumMachBox;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.TextBox machManufBox;
-        private System.Windows.Forms.ComboBox axisBox1;
+        private System.Windows.Forms.ComboBox axisBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;

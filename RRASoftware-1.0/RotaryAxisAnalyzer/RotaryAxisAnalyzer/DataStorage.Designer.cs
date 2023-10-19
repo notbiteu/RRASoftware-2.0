@@ -46,12 +46,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dataStorageTable = new System.Windows.Forms.DataGridView();
-            this.testTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.machineName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.serialNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.axis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.operatorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.exportBtn = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -266,13 +260,6 @@
             this.dataStorageTable.AllowUserToAddRows = false;
             this.dataStorageTable.AllowUserToDeleteRows = false;
             this.dataStorageTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataStorageTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.testTitle,
-            this.machineName,
-            this.serialNumber,
-            this.axis,
-            this.operatorName,
-            this.date});
             this.dataStorageTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataStorageTable.Location = new System.Drawing.Point(8, 58);
             this.dataStorageTable.Margin = new System.Windows.Forms.Padding(8);
@@ -280,52 +267,6 @@
             this.dataStorageTable.ReadOnly = true;
             this.dataStorageTable.Size = new System.Drawing.Size(968, 373);
             this.dataStorageTable.TabIndex = 1;
-            // 
-            // testTitle
-            // 
-            this.testTitle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.testTitle.HeaderText = "Test Title";
-            this.testTitle.Name = "testTitle";
-            this.testTitle.ReadOnly = true;
-            this.testTitle.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.testTitle.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // machineName
-            // 
-            this.machineName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.machineName.HeaderText = "MachineName";
-            this.machineName.Name = "machineName";
-            this.machineName.ReadOnly = true;
-            this.machineName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.machineName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // serialNumber
-            // 
-            this.serialNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.serialNumber.HeaderText = "Machine Serial Number";
-            this.serialNumber.Name = "serialNumber";
-            this.serialNumber.ReadOnly = true;
-            // 
-            // axis
-            // 
-            this.axis.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.axis.HeaderText = "Axis";
-            this.axis.Name = "axis";
-            this.axis.ReadOnly = true;
-            // 
-            // operatorName
-            // 
-            this.operatorName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.operatorName.HeaderText = "Operator";
-            this.operatorName.Name = "operatorName";
-            this.operatorName.ReadOnly = true;
-            // 
-            // date
-            // 
-            this.date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.date.HeaderText = "Date";
-            this.date.Name = "date";
-            this.date.ReadOnly = true;
             // 
             // tableLayoutPanel4
             // 
@@ -455,12 +396,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataStorageTable;
-        private System.Windows.Forms.DataGridViewTextBoxColumn testTitle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn machineName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn serialNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn axis;
-        private System.Windows.Forms.DataGridViewTextBoxColumn operatorName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn date;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button exportBtn;

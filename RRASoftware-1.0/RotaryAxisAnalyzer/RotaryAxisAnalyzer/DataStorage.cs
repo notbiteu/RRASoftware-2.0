@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,7 +33,41 @@ namespace RotaryAxisAnalyzer
 
         private void DataStorage_Load(object sender, EventArgs e)
         {
+            var client = new MongoClient(Globals.connectionString);
+            var database = client.GetDatabase(Globals.databaseName);
+            var measurecoll = database.GetCollection<BsonDocument>("measurementDetails");
 
+            var filter = new BsonDocument();
+            var doc = measurecoll.Find(filter).ToList();
+
+            // Bind the data to the DataGridView
+            dataStorageTable.DataSource = DtGridView(doc);
+        }
+
+        private DataTable DtGridView(List<BsonDocument> doc)
+        {
+            var dataTable = new DataTable();
+
+            // Add columns to the DataTable (adjust the columns to match your document structure)
+            dataTable.Columns.Add("Test title");
+            dataTable.Columns.Add("Machine Name");
+            dataTable.Columns.Add("Machine Serial Number");
+            dataTable.Columns.Add("Axis");
+            dataTable.Columns.Add("Operator Name");
+
+            foreach (var document in doc)
+            {
+                // Create a new row for each document and populate it
+                var row = dataTable.NewRow();
+                row["Test title"] = document.GetValue("testTitle").AsString;
+                row["Operator Name"] = document.GetValue("operatorName").AsString;
+                row["Machine Name"] = document.GetValue("machineName").AsString;
+                row["Axis"] = document.GetValue("Axis").AsString;
+                row["Machine Serial Number"] = document.GetValue("serialNumberMachine").AsString;
+                dataTable.Rows.Add(row);
+            }
+
+            return dataTable;
         }
     }
 }

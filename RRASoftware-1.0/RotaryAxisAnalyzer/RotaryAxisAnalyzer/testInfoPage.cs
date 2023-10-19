@@ -16,5 +16,19 @@ namespace RotaryAxisAnalyzer
         {
             InitializeComponent();
         }
+        public string GetTestTitle()
+        {
+            return testTitleBox.Text;
+        }
+
+        public string GetOperatorName()
+        {
+            return operatorNameBox.Text;
+        }
+
+        public string GetNotes()
+        {
+            return notesBox.Text;
+        }
     }
 }

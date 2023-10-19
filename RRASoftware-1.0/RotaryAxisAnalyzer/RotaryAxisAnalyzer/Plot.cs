@@ -15,9 +15,11 @@ using OxyPlot.Legends;
 
 namespace RotaryAxisAnalyzer
 {
-
+    
     public partial class Plot : Form
     {
+        private testInfoPage testinfo;
+        private machineInfo machinfo;
         public double[] X_Axis { get; private set; }
         public double[] Y_Axis { get; private set; }
         public double[] Z_Axis { get; private set; }
@@ -243,32 +245,12 @@ namespace RotaryAxisAnalyzer
             ToggleLine(line3);
         }
 
-        private void tableLayoutPanel8_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel7_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
         private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel12_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -12,6 +12,12 @@ using System.IO;
 using OxyPlot.WindowsForms;
 using OxyPlot.Axes;
 using System.Security.Cryptography.X509Certificates;
+using System.Globalization;
+using CsvHelper.Configuration;
+using CsvHelper;
+using OxyPlot;
+using CsvHelper.Configuration.Attributes;
+using System.Reflection.Emit;
 
 namespace RotaryAxisAnalyzer
 {
@@ -102,7 +108,7 @@ namespace RotaryAxisAnalyzer
 
         }
 
-        //Create CSV Files
+        //Create CSV Files [undone]
 
 
 
@@ -111,43 +117,6 @@ namespace RotaryAxisAnalyzer
         {
             DateTime dateTime = DateTime.Now;
             this.DateLabel.Text = dateTime.ToString();
-        }
-
-        private void SettingLabel_Click(object sender, EventArgs e)
-        {
-
-            Settings STS = new Settings();
-            STS.Show();
-            this.Hide();
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        //Btn Event
-        private void plotBtn_Click_1(object sender, EventArgs e)
-        {
-            if (plotControl == null)
-            {
-                plotControl = new PlotControl();
-            }
-            mainPanel.Controls.Clear();
-            plotControl.Dock = DockStyle.Fill;
-            mainPanel.Controls.Add(plotControl);
-
-            /*mainPanel.Controls.Clear();
-            plotControl.Dock = DockStyle.Fill;
-            mainPanel.Controls.Add(plotControl);*/
-
-        }
-
-
-        private void dataStorageBtn_Click(object sender, EventArgs e)
-        {
-            DataStorage dataStorageForm = new DataStorage();
-            loadform(dataStorageForm);
         }
 
         private double[][] ReadXYZDataFromCSV(string filePath)
@@ -178,7 +147,7 @@ namespace RotaryAxisAnalyzer
                         if (values.Length >= 3)
                         {
 
-                            string xValueString = values[0].Trim().Replace("\"", "");
+                            string xValueString = values[0].Trim().Replace(" ", "");
                             if (double.TryParse(values[0].Trim(), out double xValue))
                             {
                                 xData.Add(xValue);
@@ -198,7 +167,7 @@ namespace RotaryAxisAnalyzer
                         }
                     }
                 }
-                
+
                 return new double[][] { xData.ToArray(), yData.ToArray(), zData.ToArray() };
 
             }
@@ -210,11 +179,35 @@ namespace RotaryAxisAnalyzer
             }
         }
 
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
+
+        //Btn Event
+        private void plotBtn_Click_1(object sender, EventArgs e)
+        {
+            if (plotControl == null)
+            {
+                mainPanel.Controls.Clear();
+                plotControl = new PlotControl();
+            }
+
+            mainPanel.Controls.Clear();
+            plotControl.Dock = DockStyle.Fill;
+            mainPanel.Controls.Add(plotControl);
+        }
+
+
+        private void dataStorageBtn_Click(object sender, EventArgs e)
+        {
+            DataStorage dataStorageForm = new DataStorage();
+            loadform(dataStorageForm);
+        }
 
         private void importDataBtn_Click(object sender, EventArgs e)
         {
-            //define path to open as default path
+            //define path to open as default
             string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             string configFolderName = "RRAConfig";
             string saveDataFolderName = "SaveDataRRA";
@@ -230,7 +223,7 @@ namespace RotaryAxisAnalyzer
             if (!string.IsNullOrEmpty(importDataDialog.FileName))
             {
                 string filePath = importDataDialog.FileName;
-                
+
                 double[][] importedData = ReadXYZDataFromCSV(filePath);
 
                 if (importedData != null && importedData.Length == 3)
@@ -259,16 +252,21 @@ namespace RotaryAxisAnalyzer
                         Console.WriteLine(value);
                     }
 
+
+                    //plotControl.SetData(importedXData, importedYData, importedZData);
+
                     if (plotControl == null)
                     {
                         plotControl = new PlotControl();
                     }
-                    plotControl.SetData(importedXData, importedYData, importedZData);
-                    loadform(plotControl);
+
+                    plotControl.Dock = DockStyle.Fill;
+                    mainPanel.Controls.Add(plotControl);
+
                 }
                 else
                 {
-                    Console.WriteLine("Nothing Here bro");
+                    Console.WriteLine("Nothing Here at the first time");
                 }
             }
         }

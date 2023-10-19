@@ -16,5 +16,43 @@ namespace RotaryAxisAnalyzer
         {
             InitializeComponent();
         }
+        public string GetMachName()
+        {
+            return machNameBox.Text;
+        }
+
+        public string GetSNumMach()
+        {
+            return SNumMachBox.Text;
+        }
+
+        public string GetAxis()
+        {
+            return axisBox.Text;
+        }
+
+        public string GetMachManuf()
+        {
+            return machManufBox.Text;
+        }
+
+        public string GetCustName()
+        {
+            return custNameBox.Text;
+        }
+
+        public string GetCompName()
+        {
+            return compNameBox.Text;
+        }
+        public string GetMachAddress()
+        {
+            return machAddressBox.Text;
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

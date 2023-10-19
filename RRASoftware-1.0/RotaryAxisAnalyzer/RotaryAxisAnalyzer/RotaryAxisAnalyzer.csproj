@@ -184,6 +184,7 @@
       <DependentUpon>AutosetSetting.cs</DependentUpon>
     </Compile>
     <Compile Include="ChannelButtonDecoration.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="DataStorage.cs">
       <SubType>Form</SubType>
     </Compile>
